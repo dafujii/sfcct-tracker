@@ -1,5 +1,5 @@
 Snowflake Service Consumption Table
-Effective: March 2, 2026
+Effective: March 20, 2026
 Consumption
 Generally. The Snowflake Service is a cloud data platform provided by Snowflake (“Snowflake”, “we”, “us”, “our”) to Snowflake customers (each a
 “Customer”, “you”, “your”) as a service which consumes resources for distinct functions as set forth herein and is available in several different editions
@@ -1149,46 +1149,43 @@ Execution4
 Table 6(a): Snowflake AI Features Credit Table, Cortex AI Functions
 Snowflake-managed compute (Credits per one million Tokens)
 Cortex Feature
-|                                  |     | Input  | Output  |
-| -------------------------------- | --- | ------ | ------- |
-| AI Complete – claude-4-opus4     |     | 7.50   | 37.50   |
-| AI Complete – claude-haiku-4-54  |     | 0.55   | 2.75    |
-| AI Complete – claude-opus-4-54   |     | 2.75   | 13.75   |
-AI Complete – claude-opus-4-64
-|                                                |     | 2.75  | 13.75  |
-| ---------------------------------------------- | --- | ----- | ------ |
-| AI Complete – claude-opus-4-6-long-context4    |     | 5.50  | 20.63  |
-| AI Complete – claude-sonnet-4-5                |     | 1.65  | 8.25   |
-| AI Complete – claude-sonnet-4-5-long-context4  |     | 3.30  | 12.38  |
-| AI Complete – claude-sonnet-4-64               |     | 1.65  | 8.25   |
-| AI Complete – claude-sonnet-4-6-long-context4  |     | 3.30  | 12.38  |
-| AI Complete – deepseek-r1                      |     | 0.68  | 2.70   |
-AI Complete – gemini-2-5-flash4
-|                                           |     | 0.15  | 1.25  |
-| ----------------------------------------- | --- | ----- | ----- |
-| AI Complete – gemini-2-5-flash-lite4      |     | 0.05  | 0.20  |
-| AI Complete – gemini-3-pro4               |     | 1.00  | 6.00  |
-| AI Complete – gemini-3-pro-long-context4  |     | 2.00  | 9.00  |
-| AI Complete – llama3.1-405b               |     | 1.20  | 1.20  |
-| AI Complete – llama3.1-70b                |     | 0.36  | 0.36  |
-| AI Complete – llama3.1-8b                 |     | 0.11  | 0.11  |
-| AI Complete – llama3.3-70b                |     | 0.36  | 0.36  |
-| AI Complete – llama4-maverick             |     | 0.12  | 0.49  |
-| AI Complete – llama4-scout                |     | 0.09  | 0.33  |
-| AI Complete – mistral-large2              |     | 1.00  | 3.00  |
-| AI Complete – mistral-7b                  |     | 0.08  | 0.10  |
-| AI Complete – mixtral-8x7b                |     | 0.23  | 0.35  |
-| AI Complete – openai-gpt-4.1              |     | 1.00  | 4.00  |
-AI Complete – openai-gpt-54
-|                                      |     | 0.69  | 5.50  |
-| ------------------------------------ | --- | ----- | ----- |
-| AI Complete – openai-gpt-5-mini4     |     | 0.14  | 1.10  |
-| AI Complete – openai-gpt-5-nano4     |     | 0.03  | 0.22  |
-| AI Complete – openai-gpt-5.14        |     | 0.69  | 5.50  |
-| AI Complete – openai-gpt-5.24        |     | 0.97  | 7.70  |
-| AI Complete – openai-gpt-oss-120b4   |     | 0.08  | 0.30  |
-| AI Complete – openai-gpt-oss-20b4    |     | 0.04  | 0.15  |
-| AI Complete – pixtral-large          |     | 1.00  | 3.00  |
+|                                                |     | Input  | Output  |
+| ---------------------------------------------- | --- | ------ | ------- |
+| AI_COMPLETE – claude-haiku-4-5                 |     | 0.55   | 2.75    |
+| AI_COMPLETE – claude-opus-4-5                  |     | 2.75   | 13.75   |
+| AI_COMPLETE – claude-opus-4-6                  |     | 2.75   | 13.75   |
+| AI_COMPLETE – claude-sonnet-4-5                |     | 1.65   | 8.25    |
+| AI_COMPLETE – claude-sonnet-4-5-long-context4  |     | 3.30   | 12.38   |
+| AI_COMPLETE – claude-sonnet-4-6                |     | 1.65   | 8.25    |
+| AI_COMPLETE – deepseek-r1                      |     | 0.68   | 2.70    |
+| AI_COMPLETE – gemini-2-5-flash4                |     | 0.15   | 1.25    |
+| AI_COMPLETE – gemini-2-5-flash-lite4           |     | 0.05   | 0.20    |
+| AI_COMPLETE – gemini-3-pro4                    |     | 1.00   | 6.00    |
+AI_COMPLETE – gemini-3-pro-long-context4
+|                                    |     | 2.00  | 9.00  |
+| ---------------------------------- | --- | ----- | ----- |
+| AI_COMPLETE – llama3.1-405b        |     | 1.20  | 1.20  |
+| AI_COMPLETE – llama3.1-70b         |     | 0.36  | 0.36  |
+| AI_COMPLETE – llama3.1-8b          |     | 0.11  | 0.11  |
+| AI_COMPLETE – llama3.3-70b         |     | 0.36  | 0.36  |
+| AI_COMPLETE – llama4-maverick      |     | 0.12  | 0.49  |
+| AI_COMPLETE – llama4-scout         |     | 0.09  | 0.33  |
+| AI_COMPLETE – mistral-large2       |     | 1.00  | 3.00  |
+| AI_COMPLETE – mistral-7b           |     | 0.08  | 0.10  |
+| AI_COMPLETE – mixtral-8x7b         |     | 0.23  | 0.35  |
+| AI_COMPLETE – openai-gpt-4.1       |     | 1.00  | 4.00  |
+| AI_COMPLETE – openai-gpt-54        |     | 0.69  | 5.50  |
+| AI_COMPLETE – openai-gpt-5-mini4   |     | 0.14  | 1.10  |
+| AI_COMPLETE – openai-gpt-5-nano4   |     | 0.03  | 0.22  |
+AI_COMPLETE – openai-gpt-5.14
+|                                         |     | 0.69  | 5.50  |
+| --------------------------------------- | --- | ----- | ----- |
+| AI_COMPLETE – openai-gpt-5.24           |     | 0.97  | 7.70  |
+| AI_COMPLETE – openai-gpt-oss-120b4      |     | 0.08  | 0.30  |
+| AI_COMPLETE – openai-gpt-oss-20b4       |     | 0.04  | 0.15  |
+| AI_COMPLETE – pixtral-large             |     | 1.00  | 3.00  |
+| AI_COMPLETE – snowflake-llama-3.1-405b  |     | 0.96  | 0.96  |
+| AI_COMPLETE – snowflake-llama-3.3-70b   |     | 0.29  | 0.29  |
 
 14 Text-based files (e.g. CSV, XML, JSON) will be charged for their uncompressed size. Binary-based files (e.g., Parquet, Avro, ORC) will be charged for
 their observed size regardless of compression.
@@ -1198,113 +1195,100 @@ their observed size regardless of compression.
 
   15
 
-| AI Complete – snowflake-llama-3.1-405b  |     | 0.96  |     | 0.96  |
-| --------------------------------------- | --- | ----- | --- | ----- |
-| AI Complete – snowflake-llama-3.3-70b   |     | 0.29  |     | 0.29  |
-
 Snowflake-managed compute (Credits per one million Tokens)
-| AI Embed Image 1024 – voyage-multimodal-3           |     |     | 0.06   |     |
-| --------------------------------------------------- | --- | --- | ------ | --- |
-| AI Embed Text 1024 – multilingual-e5-large          |     |     | 0.05   |     |
-| AI Embed Text 1024 – nv-embed-qa-4                  |     |     | 0.05   |     |
-| AI Embed Text 1024 – snowflake-arctic-embed-l-v2.0  |     |     | 0.05   |     |
-| AI Embed Text 1024 – voyage-multilingual-2          |     |     | 0.07   |     |
-| AI Embed Text 768 – e5-base-v2                      |     |     | 0.03   |     |
-| AI Embed Text 768 – snowflake-arctic-embed-m        |     |     | 0.03   |     |
-| AI Embed Text 768 – snowflake-arctic-embed-m-v1.5   |     |     | 0.03   |     |
-| AI Sentiment                                        |     |     | 1.60   |     |
-| AI_AGG4                                             |     |     | 1.60   |     |
-| AI_CLASSIFY                                         |     |     | 1.39   |     |
-| AI_EXTRACT – arctic-extract                         |     |     | 5.00   |     |
-| AI_FILTER4                                          |     |     | 1.39   |     |
-| AI_REDACT                                           |     |     | 0.63   |     |
-| AI_SUMMARIZE_AGG4                                   |     |     | 1.60   |     |
-| AI_TRANSCRIBE                                       |     |     | 1.30   |     |
-| AI_TRANSLATE                                        |     |     | 1.50   |     |
-| Entity Sentiment                                    |     |     | 1.60   |     |
-| Extract Answer                                      |     |     | 0.08   |     |
-| Guard                                               |     |     | 0.25   |     |
-| Sentiment                                           |     |     | 0.08   |     |
-| Summarize                                           |     |     | 0.10   |     |
-| Translate                                           |     |     | 1.50   |     |
+| AI_AGG4                                   |     |     |     | 1.60   |     |
+| ----------------------------------------- | --- | --- | --- | ------ | --- |
+| AI_CLASSIFY                               |     |     |     | 1.39   |     |
+| AI_EMBED – voyage-multimodal-3            |     |     |     | 0.06   |     |
+| AI_EMBED – multilingual-e5-large          |     |     |     | 0.05   |     |
+| AI_EMBED – nv-embed-qa-4                  |     |     |     | 0.05   |     |
+| AI_EMBED – snowflake-arctic-embed-l-v2.0  |     |     |     | 0.05   |     |
+| AI_EMBED – voyage-multilingual-2          |     |     |     | 0.07   |     |
+| AI_EMBED – e5-base-v2                     |     |     |     | 0.03   |     |
+| AI_EMBED – snowflake-arctic-embed-m       |     |     |     | 0.03   |     |
+| AI_EMBED – snowflake-arctic-embed-m-v1.5  |     |     |     | 0.03   |     |
+| AI_EXTRACT – arctic-extract               |     |     |     | 5.00   |     |
+| AI_FILTER4                                |     |     |     | 1.39   |     |
+| AI_REDACT                                 |     |     |     | 0.63   |     |
+| AI_SENTIMENT                              |     |     |     | 1.60   |     |
+| AI_SUMMARIZE_AGG4                         |     |     |     | 1.60   |     |
+| AI_TRANSCRIBE                             |     |     |     | 1.30   |     |
+| AI_TRANSLATE                              |     |     |     | 1.50   |     |
+| Extract Answer                            |     |     |     | 0.08   |     |
+| Guard                                     |     |     |     | 0.25   |     |
+| Sentiment                                 |     |     |     | 0.08   |     |
+| Summarize                                 |     |     |     | 0.10   |     |
 Legacy Cortex Features
-| AI Complete – gemma-7b           |     |     | 0.12   |     |
-| -------------------------------- | --- | --- | ------ | --- |
-| AI Complete – jamba-instruct     |     |     | 0.83   |     |
-| AI Complete – jamba-1.5-large    |     |     | 1.40   |     |
-| AI Complete – jamba-1.5-mini     |     |     | 0.10   |     |
-| AI Complete – llama2-70b-chat    |     |     | 0.45   |     |
-| AI Complete – llama3-70b         |     |     | 1.21   |     |
-| AI Complete – llama3-8b          |     |     | 0.19   |     |
-| AI Complete – llama3.2-1b        |     |     | 0.04   |     |
-| AI Complete – llama3.2-3b        |     |     | 0.06   |     |
-| AI Complete – mistral-large      |     |     | 5.10   |     |
-| AI Complete – reka-core          |     |     | 5.50   |     |
-| AI Complete – reka-flash         |     |     | 0.45   |     |
-| AI_EXTRACT – arctic-tilt-entity  |     |     | 9.50   |     |
-| AI_EXTRACT – arctic-tilt-table   |     |     | 28.40  |     |
-| Classify Text                    |     |     | 1.39   |     |
+| AI_COMPLETE – gemma-7b           |     |     |     | 0.12   |     |
+| -------------------------------- | --- | --- | --- | ------ | --- |
+| AI_COMPLETE – jamba-instruct     |     |     |     | 0.83   |     |
+| AI_COMPLETE – jamba-1.5-large    |     |     |     | 1.40   |     |
+| AI_COMPLETE – jamba-1.5-mini     |     |     |     | 0.10   |     |
+| AI_COMPLETE – llama2-70b-chat    |     |     |     | 0.45   |     |
+| AI_COMPLETE – llama3-70b         |     |     |     | 1.21   |     |
+| AI_COMPLETE – llama3-8b          |     |     |     | 0.19   |     |
+| AI_COMPLETE – llama3.2-1b        |     |     |     | 0.04   |     |
+| AI_COMPLETE – llama3.2-3b        |     |     |     | 0.06   |     |
+| AI_COMPLETE – mistral-large      |     |     |     | 5.10   |     |
+| AI_COMPLETE – reka-core          |     |     |     | 5.50   |     |
+| AI_COMPLETE – reka-flash         |     |     |     | 0.45   |     |
+| AI_EXTRACT – arctic-tilt-entity  |     |     |     | 9.50   |     |
+| AI_EXTRACT – arctic-tilt-table   |     |     |     | 28.40  |     |
   Snowflake-managed compute (Credits per one million Tokens)
-|                                  |     | Input  |     | Output  |
-| -------------------------------- | --- | ------ | --- | ------- |
-| AI Complete – claude-3-5-sonnet  |     | 1.50   |     | 7.50    |
-| AI Complete – claude-3-7-sonnet  |     | 1.50   |     | 7.50    |
-| AI Complete – claude-4-sonnet    |     | 1.50   |     | 7.50    |
-| AI Complete – openai-gpt-5-chat  |     | 0.63   |     | 5.00    |
-| AI Complete – openai-o4-mini4    |     | 0.55   |     | 2.20    |
-| AI Complete – snowflake-arctic   |     | 0.84   |     | 0.84    |
+|                                  |     |     | Input  |     | Output  |
+| -------------------------------- | --- | --- | ------ | --- | ------- |
+| AI_COMPLETE – claude-3-5-sonnet  |     |     | 1.50   |     | 7.50    |
+| AI_COMPLETE – claude-3-7-sonnet  |     |     | 1.50   |     | 7.50    |
+| AI_COMPLETE – claude-4-opus4     |     |     | 7.50   |     | 37.50   |
+| AI_COMPLETE – claude-4-sonnet    |     |     | 1.50   |     | 7.50    |
+| AI_COMPLETE – openai-gpt-5-chat  |     |     | 0.63   |     | 5.00    |
+| AI_COMPLETE – openai-o4-mini4    |     |     | 0.55   |     | 2.20    |
+| AI_COMPLETE – snowflake-arctic   |     |     | 0.84   |     | 0.84    |
 
 Table 6(b): Snowflake AI Features Credit Table, REST API with Prompt Caching
 Snowflake-managed compute ($ per one million Tokens)
 Model  Inference Region
-|     | Input  | Output  | Cache Write  | Cache Read  |
-| --- | ------ | ------- | ------------ | ----------- |
+|     |     | Input  | Output  | Cache Write  | Cache Read  |
+| --- | --- | ------ | ------- | ------------ | ----------- |
 claude-3-7-sonnet  AWS Regional  $3.00  $15.00  $3.75  $0.30
+| claude-4-opus4   | AWS Regional  | $15.00  | $75.00  | $18.75  | $1.50  |
+| ---------------- | ------------- | ------- | ------- | ------- | ------ |
+| claude-4-sonnet  | AWS Regional  | $3.00   | $15.00  | $3.75   | $0.30  |
+claude-sonnet-4-5  AWS Regional  $3.30  $16.50  $4.13  $0.33
+| claude-sonnet-4-5  | AWS Global  | $3.00  | $15.00  | $3.75  | $0.30  |
+| ------------------ | ----------- | ------ | ------- | ------ | ------ |
 
   16
 
 Table 6(b): Snowflake AI Features Credit Table, REST API with Prompt Caching
 Snowflake-managed compute ($ per one million Tokens)
 Model  Inference Region
-|                  |               |     | Input   |     | Output  |     | Cache Write  |     | Cache Read  |
-| ---------------- | ------------- | --- | ------- | --- | ------- | --- | ------------ | --- | ----------- |
-| claude-4-opus4   | AWS Regional  |     | $15.00  |     | $75.00  |     | $18.75       |     | $1.50       |
-| claude-4-sonnet  | AWS Regional  |     | $3.00   |     | $15.00  |     | $3.75        |     | $0.30       |
-claude-sonnet-4-5  AWS Regional  $3.30  $16.50  $4.13  $0.33
-| claude-sonnet-4-5  | AWS Global  |     | $3.00  |     | $15.00  |     | $3.75  |     | $0.30  |
-| ------------------ | ----------- | --- | ------ | --- | ------- | --- | ------ | --- | ------ |
+|     |     |     | Input  |     | Output  |     | Cache Write  |     | Cache Read  |
+| --- | --- | --- | ------ | --- | ------- | --- | ------------ | --- | ----------- |
 claude-sonnet-4-5-long-context4  AWS Regional  $6.60  $24.75  $8.25  $0.66
-claude-sonnet-4-5-long-context4  AWS Global  $6.00  $22.50  $7.50  $0.60
-claude-sonnet-4-64  AWS Regional  $3.30  $16.50  $4.13  $0.33
-| claude-sonnet-4-64  | AWS Global  |     | $3.00  |     | $15.00  |     | $3.75  |     | $0.30  |
-| ------------------- | ----------- | --- | ------ | --- | ------- | --- | ------ | --- | ------ |
-claude-sonnet-4-6-long-context4
-|     | AWS Regional  |     | $6.60  |     | $24.75  |     | $8.25  |     | $0.66  |
-| --- | ------------- | --- | ------ | --- | ------- | --- | ------ | --- | ------ |
-claude-sonnet-4-6-long-context4  AWS Global  $6.00  $22.50  $7.50  $0.60
-| claude-haiku-4-54  | AWS Regional  |     | $1.10  |     | $5.50   |     | $1.38  |     | $0.11  |
-| ------------------ | ------------- | --- | ------ | --- | ------- | --- | ------ | --- | ------ |
-| claude-haiku-4-5   | AWS Global    |     | $1.00  |     | $5.00   |     | $1.25  |     | $0.10  |
-| claude-opus-4-54   | AWS Regional  |     | $5.50  |     | $27.50  |     | $6.88  |     | $0.55  |
-| claude-opus-4-54   | AWS Global    |     | $5.00  |     | $25.00  |     | $6.25  |     | $0.50  |
-| claude-opus-4-64   | AWS Regional  |     | $5.50  |     | $27.50  |     | $6.88  |     | $0.55  |
-| claude-opus-4-64   | AWS Global    |     | $5.00  |     | $25.00  |     | $6.25  |     | $0.50  |
-claude-opus-4-6-long-context4  AWS Regional  $11.00  $41.25  $13.75  $1.10
-claude-opus-4-6-long-context4  AWS Global  $10.00  $37.50  $12.50  $1.00
-| openai-gpt-4.1       | Azure Regional  |     | $2.20  |     | $8.80   |     |     | -   | $0.55  |
-| -------------------- | --------------- | --- | ------ | --- | ------- | --- | --- | --- | ------ |
-| openai-gpt-4.1       | Azure Global    |     | $2.00  |     | $8.00   |     |     | -   | $0.50  |
-| openai-gpt-54        | Azure Regional  |     | $1.38  |     | $11.00  |     |     | -   | $0.14  |
-| openai-gpt-54        | Azure Global    |     | $1.25  |     | $10.00  |     |     | -   | $0.13  |
-| openai-gpt-5-mini4   | Azure Regional  |     | $0.28  |     | $2.20   |     |     | -   | $0.03  |
-| openai-gpt-5-nano4   | Azure Regional  |     | $0.06  |     | $0.44   |     |     | -   | $0.01  |
-| openai-gpt-5.14      | Azure Regional  |     | $1.38  |     | $11.00  |     |     | -   | $0.14  |
-| openai-gpt-5.14      | Azure Global    |     | $1.25  |     | $10.00  |     |     | -   | $0.13  |
-| openai-gpt-5.24      | Azure Regional  |     | $1.93  |     | $15.40  |     |     | -   | $0.19  |
-openai-gpt-5.24
-|                 | Azure Global    |     | $1.75  |     | $14.00  |     |     | -   | $0.18  |
-| --------------- | --------------- | --- | ------ | --- | ------- | --- | --- | --- | ------ |
-| openai-o4-mini  | Azure Regional  |     | $1.10  |     | $4.40   |     |     | -   | $0.28  |
+claude-sonnet-4-5-long-context4
+|     | AWS Global  |     | $6.00  |     | $22.50  |     | $7.50  |     | $0.60  |
+| --- | ----------- | --- | ------ | --- | ------- | --- | ------ | --- | ------ |
+claude-sonnet-4-6  AWS Regional  $3.30  $16.50  $4.13  $0.33
+| claude-sonnet-4-6    | AWS Global      |     | $3.00  |     | $15.00  |     | $3.75  |     | $0.30  |
+| -------------------- | --------------- | --- | ------ | --- | ------- | --- | ------ | --- | ------ |
+| claude-haiku-4-5     | AWS Regional    |     | $1.10  |     | $5.50   |     | $1.38  |     | $0.11  |
+| claude-haiku-4-5     | AWS Global      |     | $1.00  |     | $5.00   |     | $1.25  |     | $0.10  |
+| claude-opus-4-5      | AWS Regional    |     | $5.50  |     | $27.50  |     | $6.88  |     | $0.55  |
+| claude-opus-4-5      | AWS Global      |     | $5.00  |     | $25.00  |     | $6.25  |     | $0.50  |
+| claude-opus-4-6      | AWS Regional    |     | $5.50  |     | $27.50  |     | $6.88  |     | $0.55  |
+| claude-opus-4-6      | AWS Global      |     | $5.00  |     | $25.00  |     | $6.25  |     | $0.50  |
+| openai-gpt-4.1       | Azure Regional  |     | $2.20  |     | $8.80   |     |        | -   | $0.55  |
+| openai-gpt-4.1       | Azure Global    |     | $2.00  |     | $8.00   |     |        | -   | $0.50  |
+| openai-gpt-54        | Azure Regional  |     | $1.38  |     | $11.00  |     |        | -   | $0.14  |
+| openai-gpt-54        | Azure Global    |     | $1.25  |     | $10.00  |     |        | -   | $0.13  |
+| openai-gpt-5-mini4   | Azure Regional  |     | $0.28  |     | $2.20   |     |        | -   | $0.03  |
+| openai-gpt-5-nano4   | Azure Regional  |     | $0.06  |     | $0.44   |     |        | -   | $0.01  |
+| openai-gpt-5.14      | Azure Regional  |     | $1.38  |     | $11.00  |     |        | -   | $0.14  |
+| openai-gpt-5.14      | Azure Global    |     | $1.25  |     | $10.00  |     |        | -   | $0.13  |
+| openai-gpt-5.24      | Azure Regional  |     | $1.93  |     | $15.40  |     |        | -   | $0.19  |
+| openai-gpt-5.24      | Azure Global    |     | $1.75  |     | $14.00  |     |        | -   | $0.18  |
+| openai-o4-mini       | Azure Regional  |     | $1.10  |     | $4.40   |     |        | -   | $0.28  |
 
 Table 6(c): Snowflake AI Features Credit Table, REST API
 Snowflake-managed compute ($ per one million Tokens)
@@ -1329,29 +1313,29 @@ Model
 Table 6(d): Snowflake AI Features Credit Table, Snowflake Intelligence
 Snowflake-managed compute (Credits per one million Tokens)
 Model
-|                    |     | Input  |     | Output  |     | Cache Write  |     |     | Cache Read  |
-| ------------------ | --- | ------ | --- | ------- | --- | ------------ | --- | --- | ----------- |
-| claude-3-5-sonnet  |     | 2.51   |     | 12.55   |     |              | -   |     | -           |
+|                    |     | Input  |     | Output  |     | Cache Write  |       |     | Cache Read  |
+| ------------------ | --- | ------ | --- | ------- | --- | ------------ | ----- | --- | ----------- |
+| claude-3-5-sonnet  |     | 2.51   |     | 12.55   |     |              | -     |     | -           |
+| claude-3-7-sonnet  |     | 2.51   |     | 12.55   |     |              | 3.14  |     | 0.25        |
+| claude-4-opus      |     | 12.55  |     | 62.76   |     | 15.69        |       |     | 1.26        |
+| claude-4-sonnet    |     | 2.51   |     | 12.55   |     |              | 3.14  |     | 0.25        |
+| claude-haiku-4-5   |     | 0.92   |     | 4.60    |     |              | 1.15  |     | 0.09        |
+| claude-opus-4-5    |     | 4.60   |     | 23.01   |     |              | 5.76  |     | 0.46        |
+| claude-opus-4-6    |     | 4.60   |     | 23.01   |     |              | 5.76  |     | 0.46        |
+| claude-sonnet-4-5  |     | 2.76   |     | 13.81   |     |              | 3.45  |     | 0.28        |
+| claude-sonnet-4-6  |     | 2.76   |     | 13.81   |     |              | 3.45  |     | 0.28        |
 
   17
 
 Table 6(d): Snowflake AI Features Credit Table, Snowflake Intelligence
 Snowflake-managed compute (Credits per one million Tokens)
 Model
-|                     | Input  | Output  | Cache Write  | Cache Read  |
-| ------------------- | ------ | ------- | ------------ | ----------- |
-| claude-3-7-sonnet   | 2.51   | 12.55   | 3.14         | 0.25        |
-| claude-4-opus       | 12.55  | 62.76   | 15.69        | 1.26        |
-| claude-4-sonnet     | 2.51   | 12.55   | 3.14         | 0.25        |
-| claude-haiku-4-54   | 0.92   | 4.60    | 1.15         | 0.09        |
-| claude-opus-4-54    | 4.60   | 23.01   | 5.76         | 0.46        |
-| claude-opus-4-64    | 4.60   | 23.01   | 5.76         | 0.46        |
-| claude-sonnet-4-5   | 2.76   | 13.81   | 3.45         | 0.28        |
-| claude-sonnet-4-64  | 2.76   | 13.81   | 3.45         | 0.28        |
-gemini-2-5-flash4
-|                      | 0.25  | 2.09   | -   | 0.03  |
+|                    | Input  | Output  | Cache Write  | Cache Read  |
+| ------------------ | ------ | ------- | ------------ | ----------- |
+| gemini-2-5-flash4  | 0.25   | 2.09    | -            | 0.03        |
+gemini-3-pro4
+|                      | 1.67  | 10.04  | -   | 0.17  |
 | -------------------- | ----- | ------ | --- | ----- |
-| gemini-3-pro4        | 1.67  | 10.04  | -   | 0.17  |
 | openai-gpt-4.1       | 1.84  | 7.36   | -   | 0.46  |
 | openai-gpt-54        | 1.15  | 9.21   | -   | 0.12  |
 | openai-gpt-5-mini4   | 0.23  | 1.84   | -   | 0.03  |
@@ -1361,73 +1345,65 @@ gemini-2-5-flash4
 Table 6(e): Snowflake AI Features Credit Table, Cortex Agents
 Snowflake-managed compute (Credits per one million Tokens)
 Model
-|                    | Input  | Output  | Cache Write  | Cache Read  |
-| ------------------ | ------ | ------- | ------------ | ----------- |
-| claude-3-5-sonnet  | 1.88   | 9.41    | -            | -           |
-| claude-3-7-sonnet  | 1.88   | 9.41    | 2.35         | 0.19        |
-| claude-4-opus      | 9.41   | 47.07   | 11.77        | 0.94        |
-| claude-4-sonnet    | 1.88   | 9.41    | 2.35         | 0.19        |
-| claude-haiku-4-54  | 0.69   | 3.45    | 0.87         | 0.07        |
-| claude-opus-4-54   | 3.45   | 17.26   | 4.32         | 0.35        |
-claude-opus-4-64
-|                     | 3.45  | 17.26  | 4.32  | 0.35  |
-| ------------------- | ----- | ------ | ----- | ----- |
-| claude-sonnet-4-5   | 2.07  | 10.36  | 2.59  | 0.21  |
-| claude-sonnet-4-64  | 2.07  | 10.36  | 2.59  | 0.21  |
-| gemini-2-5-flash4   | 0.19  | 1.57   | -     | 0.02  |
-| gemini-3-pro4       | 1.26  | 7.53   | -     | 0.13  |
-| openai-gpt-4.1      | 1.38  | 5.52   | -     | 0.35  |
-| openai-gpt-54       | 0.86  | 6.90   | -     | 0.09  |
-openai-gpt-5-mini4
-|                   | 0.17  | 1.38  | -   | 0.02  |
+|                      | Input  | Output  | Cache Write  | Cache Read  |
+| -------------------- | ------ | ------- | ------------ | ----------- |
+| claude-3-5-sonnet    | 1.88   | 9.41    | -            | -           |
+| claude-3-7-sonnet    | 1.88   | 9.41    | 2.35         | 0.19        |
+| claude-4-opus        | 9.41   | 47.07   | 11.77        | 0.94        |
+| claude-4-sonnet      | 1.88   | 9.41    | 2.35         | 0.19        |
+| claude-haiku-4-5     | 0.69   | 3.45    | 0.87         | 0.07        |
+| claude-opus-4-5      | 3.45   | 17.26   | 4.32         | 0.35        |
+| claude-opus-4-6      | 3.45   | 17.26   | 4.32         | 0.35        |
+| claude-sonnet-4-5    | 2.07   | 10.36   | 2.59         | 0.21        |
+| claude-sonnet-4-6    | 2.07   | 10.36   | 2.59         | 0.21        |
+| gemini-2-5-flash4    | 0.19   | 1.57    | -            | 0.02        |
+| gemini-3-pro4        | 1.26   | 7.53    | -            | 0.13        |
+| openai-gpt-4.1       | 1.38   | 5.52    | -            | 0.35        |
+| openai-gpt-54        | 0.86   | 6.90    | -            | 0.09        |
+| openai-gpt-5-mini4   | 0.17   | 1.38    | -            | 0.02        |
+openai-gpt-5.14
+|                   | 0.86  | 6.90  | -   | 0.09  |
 | ----------------- | ----- | ----- | --- | ----- |
-| openai-gpt-5.14   | 0.86  | 6.90  | -   | 0.09  |
 | openai-gpt-5.24   | 1.21  | 9.67  | -   | 0.12  |
 
 Table 6(f): Snowflake AI Features Credit Table, Cortex Analyst via Snowflake Intelligence or Cortex Agents
 Snowflake-managed compute (Credits per one million Tokens)
 Model
-|                     |     | Input  |     | Output  |
-| ------------------- | --- | ------ | --- | ------- |
-| claude-3-5-sonnet   |     | 3.14   |     | 15.69   |
-| claude-3-7-sonnet   |     | 3.14   |     | 15.69   |
-| claude-4-opus       |     | 15.69  |     | 78.45   |
-| claude-4-sonnet     |     | 3.14   |     | 15.69   |
-| claude-haiku-4-54   |     | 1.15   |     | 5.75    |
-| claude-opus-4-54    |     | 5.75   |     | 28.77   |
-| claude-opus-4-64    |     | 5.75   |     | 28.77   |
-| claude-sonnet-4-5   |     | 3.45   |     | 17.26   |
-| claude-sonnet-4-64  |     | 3.45   |     | 17.26   |
-| gemini-2-5-flash4   |     | 0.31   |     | 2.62    |
-| gemini-3-pro4       |     | 2.09   |     | 12.55   |
-| mistral-large2      |     | 2.09   |     | 6.28    |
+|                    |     | Input  |     | Output  |
+| ------------------ | --- | ------ | --- | ------- |
+| claude-3-5-sonnet  |     | 3.14   |     | 15.69   |
+| claude-3-7-sonnet  |     | 3.14   |     | 15.69   |
+| claude-4-opus      |     | 15.69  |     | 78.45   |
+| claude-4-sonnet    |     | 3.14   |     | 15.69   |
+| claude-haiku-4-5   |     | 1.15   |     | 5.75    |
+| claude-opus-4-5    |     | 5.75   |     | 28.77   |
+| claude-opus-4-6    |     | 5.75   |     | 28.77   |
+| claude-sonnet-4-5  |     | 3.45   |     | 17.26   |
+| claude-sonnet-4-6  |     | 3.45   |     | 17.26   |
+gemini-2-5-flash4
+|                      |     | 0.31  |     | 2.62   |
+| -------------------- | --- | ----- | --- | ------ |
+| gemini-3-pro4        |     | 2.09  |     | 12.55  |
+| mistral-large2       |     | 2.09  |     | 6.28   |
+| openai-gpt-4.1       |     | 2.30  |     | 9.21   |
+| openai-gpt-54        |     | 1.44  |     | 11.51  |
+| openai-gpt-5-mini4   |     | 0.29  |     | 2.30   |
+| openai-gpt-5.14      |     | 1.44  |     | 11.51  |
+| openai-gpt-5.24      |     | 2.02  |     | 16.11  |
 
   18
-
-Table 6(f): Snowflake AI Features Credit Table, Cortex Analyst via Snowflake Intelligence or Cortex Agents
-Snowflake-managed compute (Credits per one million Tokens)
-Model
-|                 |     | Input  |     |     | Output  |
-| --------------- | --- | ------ | --- | --- | ------- |
-| openai-gpt-4.1  |     | 2.30   |     |     | 9.21    |
-openai-gpt-54
-|                      |     | 1.44  |     |     | 11.51  |
-| -------------------- | --- | ----- | --- | --- | ------ |
-| openai-gpt-5-mini4   |     | 0.29  |     |     | 2.30   |
-| openai-gpt-5.14      |     | 1.44  |     |     | 11.51  |
-| openai-gpt-5.24      |     | 2.02  |     |     | 16.11  |
 
 Table 6(g): Snowflake AI Features Credit Table, Cortex Code18
 Snowflake-managed compute (Credits per one million Tokens)
 Model
-|                     | Input  | Output  |     | Cache Write  | Cache Read  |
-| ------------------- | ------ | ------- | --- | ------------ | ----------- |
-| claude-4-sonnet     | 1.50   | 7.50    |     | 1.88         | 0.15        |
-| claude-opus-4-54    | 2.75   | 13.75   |     | 3.44         | 0.28        |
-| claude-opus-4-64    | 2.75   | 13.75   |     | 3.44         | 0.28        |
-| claude-sonnet-4-5   | 1.65   | 8.25    |     | 2.07         | 0.17        |
-| claude-sonnet-4-64  | 1.65   | 8.25    |     | 2.07         | 0.17        |
-| openai-gpt-5.24     | 0.97   | 7.70    |     | -            | 0.10        |
+|                    | Input  | Output  |     | Cache Write  | Cache Read  |
+| ------------------ | ------ | ------- | --- | ------------ | ----------- |
+| claude-4-sonnet    | 1.50   | 7.50    |     | 1.88         | 0.15        |
+| claude-opus-4-5    | 2.75   | 13.75   |     | 3.44         | 0.28        |
+| claude-opus-4-6    | 2.75   | 13.75   |     | 3.44         | 0.28        |
+| claude-sonnet-4-5  | 1.65   | 8.25    |     | 2.07         | 0.17        |
+| claude-sonnet-4-6  | 1.65   | 8.25    |     | 2.07         | 0.17        |
+| openai-gpt-5.24    | 0.97   | 7.70    |     | -            | 0.10        |
 
 Table 6(h): Snowflake AI Features Credit Table, Fine-tuning4
 Snowflake-managed compute (Credits per one million Tokens)
@@ -1466,6 +1442,12 @@ Cloud Provider  Snowflake-managed compute (Credits per PTU per hour)20  Term Len
 | ------ | --- | ----- | --- | --- | --- |
 | Azure  |     | 0.10  |     |     | 1   |
 
+Table 7: Openflow Connector for Oracle
+Feature  Unit Price per Licensed Core per month
+| License                |     |     |     | $70  |     |
+| ---------------------- | --- | --- | --- | ---- | --- |
+| Support & Maintenance  |     |     |     | $40  |     |
+
 18 Use of Cortex Code in Snowsight, as such a feature is described in the Documentation, is available for free for a limited time. Use of Cortex Code CLI,
 as such a feature is described in the Documentation, is billed according to the pricing in this table.
 19 This pricing will only be applicable when using the Cortex Analyst API.
@@ -1473,10 +1455,6 @@ as such a feature is described in the Documentation, is billed according to the 
 
   19
 
-Table 7: Openflow Connector for Oracle
-Feature Unit Price per Licensed Core per month
-License $70
-Support & Maintenance $40
 Table 8: Organization Usage
 Records Powering Views (per Month) Credits
 <1 million 0
@@ -1527,12 +1505,6 @@ Foreign Currency to USD at the Spot Rate applicable for the invoice date of each
 ii. At the time of each Billing Event, the USD Total Capacity Balance will be adjusted up or down based on the Spot
 Rate applicable for the invoice date of each such Billing Event (the “FX Adjustment”) to establish an updated USD Total
 Capacity Balance. For clarity, Customer’s actual consumption percentage against the USD Total Capacity Balance will
-21 The “Spot Rate” means the real-time currency conversion spot rate existing in the United States as reported by Oanda.com (or such other reputable
-foreign exchange rate platform Snowflake may use in its sole discretion).
-22 The “Processing Date” means the later of: (a) the Subscription Term Start Date or the (b) the date the Order Form is processed by Snowflake.
-Notwithstanding the foregoing, any Additional Capacity Order will have the same Processing Date as the Underlying Order Form.
-20
-
 move up or down as a result of each FX Adjustment.
 e. Customer’s consumption will be drawn against the USD Total Capacity Balance (subject to any FX Adjustment, as
 applicable).
@@ -1542,6 +1514,12 @@ applicable FX Adjustment and Customer’s consumption for the immediately preced
 Processing Date.
 For clarity, any Capacity Credit Price and Capacity Storage Price set forth in the Order Form are for illustrative purposes only. If the Capacity Credit Price
 and Capacity Storage Price were set forth in the Order Form in EUR, Customer may reference the applicable EUR pricing available at
+21 The “Spot Rate” means the real-time currency conversion spot rate existing in the United States as reported by Oanda.com (or such other reputable
+foreign exchange rate platform Snowflake may use in its sole discretion).
+22 The “Processing Date” means the later of: (a) the Subscription Term Start Date or the (b) the date the Order Form is processed by Snowflake.
+Notwithstanding the foregoing, any Additional Capacity Order will have the same Processing Date as the Underlying Order Form.
+20
+
 https://www.snowflake.com/legal-files/CreditConsumptionTableEUR.pdf, which shall apply for the remainder of Customer’s then-current Subscription Term.
 For the avoidance of doubt, the above terms apply whether Capacity is purchased directly from Snowflake or through a Snowflake-authorized reseller. For
 Order Forms (including Underlying Order Forms) placed through resellers, the date of the “Billing Event,” “Processing Date” and/or “FX Adjustment” will be
