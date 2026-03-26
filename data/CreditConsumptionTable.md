@@ -1,5 +1,5 @@
 Snowflake Service Consumption Table
-Effective: March 20, 2026
+Effective: March 25, 2026
 Consumption
 Generally. The Snowflake Service is a cloud data platform provided by Snowflake (“Snowflake”, “we”, “us”, “our”) to Snowflake customers (each a
 “Customer”, “you”, “your”) as a service which consumes resources for distinct functions as set forth herein and is available in several different editions
@@ -1423,12 +1423,14 @@ Legacy Features
 
 Table 6(i): Snowflake AI Features Credit Table, Other
 Feature  Snowflake-managed compute
-| AI Parse Document – Layout   |     | 3.33 Credits per 1,000 pages           |     |     |     |
-| ---------------------------- | --- | -------------------------------------- | --- | --- | --- |
-| AI Parse Document – OCR      |     | 0.5 Credits per 1,000 pages            |     |     |     |
-| Cortex Analyst               |     | 67 Credits per 1,000 messages19        |     |     |     |
-| Cortex Search                |     | 6.3 Credits per GB/mo of indexed data  |     |     |     |
-| Document AI                  |     | 8 Credits per hour of compute          |     |     |     |
+| AI Parse Document – Layout   |     | 3.33 Credits per 1,000 pages  |     |     |     |
+| ---------------------------- | --- | ----------------------------- | --- | --- | --- |
+| AI Parse Document – OCR      |     | 0.5 Credits per 1,000 pages   |     |     |     |
+Batch Cortex Search4  0.12 Credits per GB/hr of indexed data
+| Cortex Analyst  |     | 67 Credits per 1,000 messages19        |     |     |     |
+| --------------- | --- | -------------------------------------- | --- | --- | --- |
+| Cortex Search   |     | 6.3 Credits per GB/mo of indexed data  |     |     |     |
+| Document AI     |     | 8 Credits per hour of compute          |     |     |     |
 
 A Provisioned Throughput reservation allows you to reserve continuous access to certain Snowflake AI Features for a specified, fixed term (the “Provisioned
 Throughput”), subject to Snowflake’s approval. Each Provisioned Throughput must specify: (i) the reserved Snowflake AI Feature; (ii) the term; (iii) and the
