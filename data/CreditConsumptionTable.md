@@ -1,5 +1,5 @@
 Snowflake Service Consumption Table
-Effective: June 1, 2026
+Effective: June 2, 2026
 Consumption
 Generally. The Snowflake Service is a cloud data platform provided by Snowflake (“Snowflake”, “we”, “us”, “our”) to Snowflake customers (each a
 “Customer”, “you”, “your”) as a service which consumes resources for distinct functions as set forth herein and is available in several different editions
@@ -11,7 +11,7 @@ Warehouse”) or Snowpark container services compute nodes (“Compute Nodes”)
 Compute,” and “Adaptive Compute Services”). As set forth in the tables below “Azure,” “AWS,” and “GCP” each refer to the Cloud Providers, Microsoft
 Corporation, Amazon Web Services, Inc., and Google LLC, respectively. Any ($) values set forth in the below tables are in U.S. dollars (USD).
 Platform Credits and AI Credits
-Compute (Virtual Warehouse Services, SPCS Compute, Snowflake Openflow, and Postgres Compute). Snowflake bills for Compute using
+Compute (Virtual Warehouse Services, SPCS Compute, Snowflake Openflow, and Postgres Compute). Snowflake bills for compute using
 purchasable credits, as described herein (“Platform Credits”).1 Virtual Warehouses and Compute Nodes (which includes Postgres Compute)
 use Platform Credits at certain rates based on the effective size2 of the Virtual Warehouse or Compute Node while the applicable Virtual
 Warehouse or Compute Node is in operation, as set forth in the Platform Credit Tables below, as determined by Customer. When a Virtual
@@ -61,7 +61,6 @@ out of the Rebate Program by contacting Snowflake at legalnotices@snowflake.com.
 Storage. Storage pricing is based on the average terabytes per month of all Customer Data stored in your Snowflake Account. The average terabytes per
 month is calculated by taking periodic snapshots of all Customer Data. The daily average will be displayed in the Snowflake Service. The monthly charge
 is based on the average calculated across the number of calendar days in that month. If Customer Data stored is compressed, the compressed file size is
-used in the calculation of the total storage used. The applicable storage pricing for each feature is set forth in Tables 3(a), 3(b), 3(c), 3(d), 3(e), and 3(f)
 1 For clarity, where Customer’s Order Form, Agreement or Documentation refers to the term “Snowflake Credits” or “Credits”, such reference shall be
 interpreted to refer to Platform Credits.
 2 If you have the ability to create multi-cluster Virtual Warehouses, each Virtual Warehouse can run multiple, equal-size clusters concurrently and
@@ -70,6 +69,7 @@ Warehouse and the number of running clusters.
 3 Accounts in Capacity will be charged for Cloud Services only if it has a Subscription Term Start Date on or after February 1, 2020.
 1
 
+used in the calculation of the total storage used. The applicable storage pricing for each feature is set forth in Tables 3(a), 3(b), 3(c), 3(d), 3(e), and 3(f)
 below, as described further in the Documentation.
 Data Transfer (Ingress or Egress): As more fully described in the Documentation, the Snowflake Service allows Customer to transfer Customer Data in
 and out of its existing Account (“Data Transfer”). Depending on the Cloud Provider and what Region the Data Transfer is executed from, charges may be
@@ -120,18 +120,17 @@ Documentation.
 Table 1(f): Table for First Generation SPCS Instances
 Platform Credits Per Hour
 Instance Family  SPCS Compute  Openflow Compute – Snowflake Deployment (SPCS)
-| CPU_X64_XS           |     |     |     |     | 0.06  |     |     |     |     | -     |     |     |
-| -------------------- | --- | --- | --- | --- | ----- | --- | --- | --- | --- | ----- | --- | --- |
-| CPU_X64_S            |     |     |     |     | 0.11  |     |     |     |     | 0.11  |     |     |
-| CPU_X64_M            |     |     |     |     | 0.22  |     |     |     |     | -     |     |     |
-| CPU_X64_SL           |     |     |     |     | 0.41  |     |     |     |     | 0.41  |     |     |
-| CPU_X64_L            |     |     |     |     | 0.83  |     |     |     |     | 0.83  |     |     |
-| HIGHMEM_X64_S        |     |     |     |     | 0.28  |     |     |     |     | -     |     |     |
-| HIGHMEM_X64_M        |     |     |     |     | 1.11  |     |     |     |     | -     |     |     |
-| HIGHMEM_X64_SL       |     |     |     |     | 2.93  |     |     |     |     | -     |     |     |
-| HIGHMEM_X64_L        |     |     |     |     | 4.44  |     |     |     |     | -     |     |     |
-| GPU_NV_XS            |     |     |     |     | 0.25  |     |     |     |     | -     |     |     |
-| GPU_GCP_NV_L4_1_24G  |     |     |     |     | 0.43  |     |     |     |     | -     |     |     |
+| CPU_X64_XS      |     |     |     |     | 0.06  |     |     |     |     | -     |     |     |
+| --------------- | --- | --- | --- | --- | ----- | --- | --- | --- | --- | ----- | --- | --- |
+| CPU_X64_S       |     |     |     |     | 0.11  |     |     |     |     | 0.11  |     |     |
+| CPU_X64_M       |     |     |     |     | 0.22  |     |     |     |     | -     |     |     |
+| CPU_X64_SL      |     |     |     |     | 0.41  |     |     |     |     | 0.41  |     |     |
+| CPU_X64_L       |     |     |     |     | 0.83  |     |     |     |     | 0.83  |     |     |
+| HIGHMEM_X64_S   |     |     |     |     | 0.28  |     |     |     |     | -     |     |     |
+| HIGHMEM_X64_M   |     |     |     |     | 1.11  |     |     |     |     | -     |     |     |
+| HIGHMEM_X64_SL  |     |     |     |     | 2.93  |     |     |     |     | -     |     |     |
+| HIGHMEM_X64_L   |     |     |     |     | 4.44  |     |     |     |     | -     |     |     |
+| GPU_NV_XS       |     |     |     |     | 0.25  |     |     |     |     | -     |     |     |
 
 4 5XL and 6XL standard Virtual Warehouse sizes, if available, may not be GA in all Regions.
 5 This feature is available as a Preview, subject to the Preview Terms at https://www.snowflake.com/en/legal/.
@@ -142,8 +141,9 @@ Instance Family  SPCS Compute  Openflow Compute – Snowflake Deployment (SPCS)
 Table 1(f): Table for First Generation SPCS Instances
 Platform Credits Per Hour
 Instance Family  SPCS Compute  Openflow Compute – Snowflake Deployment (SPCS)
-| GPU_NV_S               |     | 0.57   |     | -   |
+| GPU_GCP_NV_L4_1_24G    |     | 0.43   |     | -   |
 | ---------------------- | --- | ------ | --- | --- |
+| GPU_NV_S               |     | 0.57   |     | -   |
 | GPU_NV_SM              |     | 1.70   |     | -   |
 | GPU_GCP_NV_L4_4_24G    |     | 1.94   |     | -   |
 | GPU_NV_M               |     | 2.68   |     | -   |
@@ -204,7 +204,6 @@ Postgres Compute (Platform Credits per Hour)  Postgres Compute - High Availabili
 | STANDARD_4XL     | 0.5696  | 0.6016  | 1.1392  | 1.2032  |
 | STANDARD_8XL     | 1.1392  | 1.2032  | 2.2784  | 2.4064  |
 | STANDARD_12XL    | 1.7088  | 1.8048  | 3.4176  | 3.6096  |
-| STANDARD_24XL    | 3.4176  | 3.6096  | 6.8352  | 7.2192  |
 
   3
 
@@ -212,6 +211,7 @@ Table 1(i): Table for Snowflake Postgres Compute5
   Postgres Compute (Platform Credits per Hour)  Postgres Compute - High Availability (Platform Credits per Hour)
 | Instance Family  |     | AWS     | Azure    | AWS      |     | Azure    |
 | ---------------- | --- | ------- | -------- | -------- | --- | -------- |
+| STANDARD_24XL    |     | 3.4176  | 3.6096   | 6.8352   |     | 7.2192   |
 | HIGHMEM_L        |     | 0.1024  | 0.1088   | 0.2048   |     | 0.2176   |
 | HIGHMEM_XL       |     | 0.2048  | 0.2176   | 0.4096   |     | 0.4352   |
 | HIGHMEM_2XL      |     | 0.4096  | 0.4352   | 0.8192   |     | 0.8704   |
@@ -267,8 +267,6 @@ US Gov East 1 (Fedramp High
 | AWS  |     |     | -   | -   | $5.60  | $8.40  |
 | ---- | --- | --- | --- | --- | ------ | ------ |
 Plus)
-| AWS  | EU (Zurich)  |     | $3.10  | $4.65  | $6.20  | $9.30  |
-| ---- | ------------ | --- | ------ | ------ | ------ | ------ |
 
 6 VPS is only available if specified on an Order Form. A separate annual fee per deployment is required and will be set forth in the applicable Order Form.
 After expiration of the Subscription Term specified in such Order Form and while Customer is in On Demand, the annual deployment fee(s) specified in
@@ -281,19 +279,20 @@ Table 2(a): On Demand Platform Credit Pricing
 | Cloud Provider  |      |     | Region               |     |           |     |             | Snowflake Service Edition  |                    |     |        |
 | --------------- | ---- | --- | -------------------- | --- | --------- | --- | ----------- | -------------------------- | ------------------ | --- | ------ |
 |                 |      |     |                      |     | Standard  |     | Enterprise  |                            | Business Critical  |     | VPS6   |
+|                 | AWS  |     | EU (Zurich)          |     | $3.10     |     |             | $4.65                      | $6.20              |     | $9.30  |
 |                 | AWS  |     | US Gov West 1 (DoD)  |     | -         |     |             | -                          | $5.60              |     | $8.40  |
 US West (Commercial Gov -
 |     | AWS  |     |     |     | -   |     |     | -   | $4.80  |     | $7.20  |
 | --- | ---- | --- | --- | --- | --- | --- | --- | --- | ------ | --- | ------ |
 Oregon)
-|     | AWS    |                             | Africa (Cape Town)    |     | $2.80  |     |     | $4.20  | $5.60  |     | $8.40  |
-| --- | ------ | --------------------------- | --------------------- | --- | ------ | --- | --- | ------ | ------ | --- | ------ |
-|     | AWS    |                             | Middle East (UAE)     |     | $2.70  |     |     | $4.00  | $5.40  |     | $8.10  |
-|     | AWS    | Asia Pacific (Malaysia)     |                       |     | $2.40  |     |     | $3.60  | $4.80  |     | $7.20  |
-|     | AWS    | Asia Pacific (Thailand)     |                       |     | $2.40  |     |     | $3.60  | $4.80  |     | $7.20  |
-|     | AWS    | Asia Pacific (New Zealand)  |                       |     | $2.75  |     |     | $4.05  | $5.50  |     | $8.25  |
-|     | Azure  |                             | East US 2 (Virginia)  |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
-|     | Azure  | West US 2 (Washington)      |                       |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
+|     | AWS    |                             | Africa (Cape Town)       |     | $2.80  |     |     | $4.20  | $5.60  |     | $8.40  |
+| --- | ------ | --------------------------- | ------------------------ | --- | ------ | --- | --- | ------ | ------ | --- | ------ |
+|     | AWS    |                             | Middle East (UAE)        |     | $2.70  |     |     | $4.00  | $5.40  |     | $8.10  |
+|     | AWS    | Asia Pacific (Malaysia)     |                          |     | $2.40  |     |     | $3.60  | $4.80  |     | $7.20  |
+|     | AWS    |                             | Asia Pacific (Thailand)  |     | $2.40  |     |     | $3.60  | $4.80  |     | $7.20  |
+|     | AWS    | Asia Pacific (New Zealand)  |                          |     | $2.75  |     |     | $4.05  | $5.50  |     | $8.25  |
+|     | Azure  |                             | East US 2 (Virginia)     |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
+|     | Azure  | West US 2 (Washington)      |                          |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
 Azure  West Europe (Netherlands)  $2.60  $3.90  $5.20  $7.80
 Australia East (New South
 |     | Azure  |     |     |     | $2.75  |     |     | $4.05  | $5.50  |     | $8.25  |
@@ -302,35 +301,32 @@ Wales)
 |     | Azure  | Canada Central (Toronto)  |     |     | $2.25  |     |     | $3.50  | $4.50  |     | $6.75  |
 | --- | ------ | ------------------------- | --- | --- | ------ | --- | --- | ------ | ------ | --- | ------ |
 Azure  Southeast Asia (Singapore)  $2.50  $3.70  $5.00  $7.50
-|     | Azure  |                           | Switzerland North     |     | $3.10  |     |     | $4.65  | $6.20  |     | $9.30  |
-| --- | ------ | ------------------------- | --------------------- | --- | ------ | --- | --- | ------ | ------ | --- | ------ |
-|     | Azure  |                           | US Gov Virginia       |     | -      |     |     | -      | $5.60  |     | $8.40  |
-|     | Azure  |                           | Central US (Iowa)     |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
-|     | Azure  | North Europe (Ireland)    |                       |     | $2.60  |     |     | $3.90  | $5.20  |     | $7.80  |
-|     | Azure  |                           | Japan East (Tokyo)    |     | $2.85  |     |     | $4.30  | $5.70  |     | $8.55  |
-|     | Azure  |                           | UAE North (Dubai)     |     | $2.70  |     |     | $4.00  | $5.40  |     | $8.10  |
-|     | Azure  | South Central US (Texas)  |                       |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
-|     | Azure  |                           | Central India (Pune)  |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
-|     | Azure  |                           | UK South (London)     |     | $2.70  |     |     | $4.00  | $5.40  |     | $8.10  |
+|     | Azure  |                           | Switzerland North       |     | $3.10  |     |     | $4.65  | $6.20  |     | $9.30  |
+| --- | ------ | ------------------------- | ----------------------- | --- | ------ | --- | --- | ------ | ------ | --- | ------ |
+|     | Azure  |                           | US Gov Virginia         |     | -      |     |     | -      | $5.60  |     | $8.40  |
+|     | Azure  |                           | Central US (Iowa)       |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
+|     | Azure  |                           | North Europe (Ireland)  |     | $2.60  |     |     | $3.90  | $5.20  |     | $7.80  |
+|     | Azure  |                           | Japan East (Tokyo)      |     | $2.85  |     |     | $4.30  | $5.70  |     | $8.55  |
+|     | Azure  |                           | UAE North (Dubai)       |     | $2.70  |     |     | $4.00  | $5.40  |     | $8.10  |
+|     | Azure  | South Central US (Texas)  |                         |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
+|     | Azure  |                           | Central India (Pune)    |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
+|     | Azure  |                           | UK South (London)       |     | $2.70  |     |     | $4.00  | $5.40  |     | $8.10  |
 US Gov Virginia (Fed Ramp
-|     | Azure  |     |     |     | -   |     |     | -   | $5.60  |     | $8.40  |
-| --- | ------ | --- | --- | --- | --- | --- | --- | --- | ------ | --- | ------ |
-High Plus)
-|     | Azure  |                          | Mexico Central       |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
-| --- | ------ | ------------------------ | -------------------- | --- | ------ | --- | --- | ------ | ------ | --- | ------ |
-|     | Azure  |                          | Korea Central        |     | $2.75  |     |     | $4.05  | $5.50  |     | $8.25  |
-|     | Azure  |                          | Sweden Central       |     | $2.40  |     |     | $3.60  | $4.80  |     | $7.20  |
-|     | Azure  |                          | East US (Virginia)   |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
-|     | GCP    |                          | US Central 1 (Iowa)  |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
-|     | GCP    | US East 4 (N. Virginia)  |                      |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
+|     | Azure  |     | High Plus)               |     | -      |     |     | -      | $5.60  |     | $8.40  |
+| --- | ------ | --- | ------------------------ | --- | ------ | --- | --- | ------ | ------ | --- | ------ |
+|     | Azure  |     | Mexico Central           |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
+|     | Azure  |     | Korea Central            |     | $2.75  |     |     | $4.05  | $5.50  |     | $8.25  |
+|     | Azure  |     | Sweden Central           |     | $2.40  |     |     | $3.60  | $4.80  |     | $7.20  |
+|     | Azure  |     | East US (Virginia)       |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
+|     | GCP    |     | US Central 1 (Iowa)      |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
+|     | GCP    |     | US East 4 (N. Virginia)  |     | $2.00  |     |     | $3.00  | $4.00  |     | $6.00  |
 GCP  Europe West 4 (Netherlands)  $2.60  $3.90  $5.20  $7.80
 |     | GCP  | Europe West 2 (London)     |     |     | $2.70  |     |     | $4.00  | $5.40  |     | $8.10  |
 | --- | ---- | -------------------------- | --- | --- | ------ | --- | --- | ------ | ------ | --- | ------ |
 |     | GCP  | Europe West 3 (Frankfurt)  |     |     | $2.60  |     |     | $3.90  | $5.20  |     | $7.80  |
 Middle East Central 2
-|     | GCP  |     |     |     | $3.25  |     |     | $4.90  | $6.50  |     | $9.75  |
-| --- | ---- | --- | --- | --- | ------ | --- | --- | ------ | ------ | --- | ------ |
-(Dammam)
+|     | GCP  |     | (Dammam)  |     | $3.25  |     |     | $4.90  | $6.50  |     | $9.75  |
+| --- | ---- | --- | --------- | --- | ------ | --- | --- | ------ | ------ | --- | ------ |
 Australia Southeast 2
 |     | GCP  |     |     |     | $2.75  |     |     | $4.05  | $5.50  |     | $8.25  |
 | --- | ---- | --- | --- | --- | ------ | --- | --- | ------ | ------ | --- | ------ |
@@ -342,11 +338,11 @@ Snowflake Service. Snowflake will provide you with monthly statements of usage, 
 
 Table 2(b): AI Credit Pricing
 Capacity AI Credit Pricing by ACV Range
-|     |       |     | On      | Tier 1  | Tier 2  | Tier 3  |     | Tier 4  | Tier 5  | Tier 6  | Tier 7  |
+On
+|     |       |     |         | Tier 1  | Tier 2  | Tier 3  |     | Tier 4  | Tier 5  | Tier 6  | Tier 7  |
 | --- | ----- | --- | ------- | ------- | ------- | ------- | --- | ------- | ------- | ------- | ------- |
 |     | Type  |     | Demand  | USD     | USD     | USD     |     | USD     | USD     | USD     | USD     |
-Pricing
-$0 -  $1,200,000 -  $3,000,000 -  $5,000,000 -  $10,000,000 -  $20,000,000 -  $40,000,000+
+Pricing  $0 -  $1,200,000 -  $3,000,000 -  $5,000,000 -  $10,000,000 -  $20,000,000 -  $40,000,000+
 |     |     |     |     | $1,199,999  | $2,999,999  | $4,999,999  |     | $9,999,999  | $19,999,999  | $39,999,999  |     |
 | --- | --- | --- | --- | ----------- | ----------- | ----------- | --- | ----------- | ------------ | ------------ | --- |
 Global  $2.00  $2.00  $1.96  $1.96  $1.94  $1.92  $1.90  $1.88
@@ -354,11 +350,11 @@ Regional  $2.20  $2.20  $2.16  $2.16  $2.13  $2.11  $2.09  $2.07
 While in On Demand, your Snowflake AI Credit pricing is as set forth in the “On Demand Pricing” column in Table 2(b) (AI Credit Pricing). Capacity AI Credit
 Pricing is based on the annualized contract value of the applicable Order Form, except as otherwise indicated on such Order Form. The annualized contract
 values listed underneath each tier in Tables 2(b) and 3(a) (“ACV Ranges”) are for illustrative purposes only, and if the designated tier(s) for AI Credit and/or
-Storage for the ACV Ranges listed in any such tables conflicts with the respective tier(s) indicated on an applicable Order Form, then the indicated tier(s)
-on the applicable Order Form will control. For clarity and the avoidance of doubt, neither Additional Capacity Orders, nor unused but paid for Capacity from
 
   5
 
+Storage for the ACV Ranges listed in any such tables conflicts with the respective tier(s) indicated on an applicable Order Form, then the indicated tier(s)
+on the applicable Order Form will control. For clarity and the avoidance of doubt, neither Additional Capacity Orders, nor unused but paid for Capacity from
 prior Order Forms made available for use (i.e., rolled over) during the Subscription Term of the applicable Order Form, shall be included for purposes of
 calculating the ACV Range in Tables 2(b) and 3(a). Additionally, Cortex Inference may not be eligible for Capacity AI Credit Pricing.
 Table 3(a): Standard Storage Pricing
@@ -452,9 +448,6 @@ Azure $23.00 $23.00 $21.47 $19.94 $18.40 $16.86 $15.34 $13.80
 West Europe
 Azure $23.00 $23.00 $21.47 $19.94 $18.40 $16.86 $15.34 $13.80
 (Netherlands)
-Australia East
-Azure $25.00 $25.00 $23.33 $21.68 $20.00 $18.33 $16.68 $15.00
-(New South
 6
 
 Table 3(a): Standard Storage Pricing
@@ -466,6 +459,8 @@ Cloud
 Provider Region Storage USD USD USD USD USD USD USD
 Pricing $0 - $1,200,000 - $3,000,000 - $5,000,000 - $10,000,000 - $20,000,000 - $40,000,000+
 (TB/mo) $1,199,999 $2,999,999 $4,999,999 $9,999,999 $19,999,999 $39,999,999
+Australia East
+Azure (New South $25.00 $25.00 $23.33 $21.68 $20.00 $18.33 $16.68 $15.00
 Wales)
 Canada
 Azure Central $25.00 $25.00 $23.33 $21.68 $20.00 $18.33 $16.68 $15.00
@@ -543,19 +538,15 @@ Order. Absent any express terms to the contrary in the applicable Order Form or 
 Forms not expressly designated as a “Qualifying Order” shall be based on the “Tier 1” rates in the table above.
 For clarity, any references to “storage” (e.g., “Capacity Storage Price,” “Capacity Storage Tier(s),” or “Storage Discount(s)”) indicated on an Order Form
 shall be understood in reference to the Standard Storage Pricing set forth in Table 3(a), and not in reference to any other storage type set forth below.
-Table 3(b): Hybrid Tables Storage Pricing
-Cloud
-Region On Demand & Capacity Hybrid Tables Storage Pricing (GB/mo)
-Provider
-AWS US East (Northern Virginia) $0.34
 7
 
 Table 3(b): Hybrid Tables Storage Pricing
 Cloud
 Region  On Demand & Capacity Hybrid Tables Storage Pricing (GB/mo)
 Provider
-| AWS    | US West (Oregon)                   |     |     | $0.34  |     |     |
+| AWS    | US East (Northern Virginia)        |     |     | $0.34  |     |     |
 | ------ | ---------------------------------- | --- | --- | ------ | --- | --- |
+| AWS    | US West (Oregon)                   |     |     | $0.34  |     |     |
 | AWS    | EU Dublin                          |     |     | $0.34  |     |     |
 | AWS    | EU Frankfurt                       |     |     | $0.36  |     |     |
 | AWS    | AP Sydney                          |     |     | $0.37  |     |     |
@@ -1256,20 +1247,20 @@ Table 6(a): Snowflake AI Features Table, Cortex AI Functions
 Snowflake-managed compute (AI Credits per one million Tokens)
 Cortex Feature
 Input  Output
-| AI_COMPLETE – claude-haiku-4-5  |     |     | 0.60  |     | 3.00   |
+| AI_COMPLETE – claude-4-sonnet   |     |     | 1.80  |     | 9.00   |
 | ------------------------------- | --- | --- | ----- | --- | ------ |
+| AI_COMPLETE – claude-haiku-4-5  |     |     | 0.60  |     | 3.00   |
 | AI_COMPLETE – claude-opus-4-5   |     |     | 3.00  |     | 15.00  |
 | AI_COMPLETE – claude-opus-4-6   |     |     | 3.00  |     | 15.00  |
-| AI_COMPLETE – claude-opus-4-75  |     |     | 3.00  |     | 15.00  |
-AI_COMPLETE – claude-opus-4-85
+AI_COMPLETE – claude-opus-4-75
 3.00  15.00
-| AI_COMPLETE – claude-sonnet-4-5       |     |     | 1.80  |     | 9.00  |
-| ------------------------------------- | --- | --- | ----- | --- | ----- |
-| AI_COMPLETE – claude-sonnet-4-6       |     |     | 1.80  |     | 9.00  |
-| AI_COMPLETE – deepseek-r1             |     |     | 0.81  |     | 3.24  |
-| AI_COMPLETE – gemini-2-5-flash5       |     |     | 0.18  |     | 1.50  |
-| AI_COMPLETE – gemini-2-5-flash-lite5  |     |     | 0.06  |     | 0.24  |
-| AI_COMPLETE – gemini-3.1-pro5         |     |     | 1.20  |     | 7.20  |
+| AI_COMPLETE – claude-opus-4-85        |     |     | 3.00  |     | 15.00  |
+| ------------------------------------- | --- | --- | ----- | --- | ------ |
+| AI_COMPLETE – claude-sonnet-4-5       |     |     | 1.80  |     | 9.00   |
+| AI_COMPLETE – claude-sonnet-4-6       |     |     | 1.80  |     | 9.00   |
+| AI_COMPLETE – deepseek-r1             |     |     | 0.81  |     | 3.24   |
+| AI_COMPLETE – gemini-2-5-flash5       |     |     | 0.18  |     | 1.50   |
+| AI_COMPLETE – gemini-2-5-flash-lite5  |     |     | 0.06  |     | 0.24   |
 
 11 File charge doesn't apply to Iceberg tables, only to External Tables and Directory Tables.
 12 The ROW_COUNT DMF (as described further in the Documentation) uses a Snowflake-managed compute multiplier of 0.9.
@@ -1283,8 +1274,9 @@ their observed size regardless of compression.
 
   16
 
-| AI_COMPLETE – gemini-3.1-pro-long-context5  | 2.40   | 10.80  |
+| AI_COMPLETE – gemini-3.1-pro5               | 1.20   | 7.20   |
 | ------------------------------------------- | ------ | ------ |
+| AI_COMPLETE – gemini-3.1-pro-long-context5  | 2.40   | 10.80  |
 | AI_COMPLETE – gemini-3.5-flash5             | 0.90   | 5.40   |
 | AI_COMPLETE – llama3.1-405b                 | 1.44   | 1.44   |
 | AI_COMPLETE – llama3.1-70b                  | 0.432  | 0.432  |
@@ -1308,12 +1300,10 @@ their observed size regardless of compression.
 | AI_COMPLETE – openai-gpt-5.5-long-context5  | 6.00   | 27.00  |
 | AI_COMPLETE – pixtral-large                 | 1.20   | 3.60   |
 | AI_COMPLETE – qwen3-32b5                    | 0.09   | 0.36   |
-AI_COMPLETE – qwen3-next-80b-a3b5
-|                                         | 0.09   | 0.72   |
-| --------------------------------------- | ------ | ------ |
-| AI_COMPLETE – qwen3-vl-235b-a22b5       | 0.32   | 1.60   |
-| AI_COMPLETE – snowflake-llama-3.1-405b  | 1.152  | 1.152  |
-| AI_COMPLETE – snowflake-llama-3.3-70b   | 0.432  | 0.432  |
+| AI_COMPLETE – qwen3-next-80b-a3b5           | 0.09   | 0.72   |
+| AI_COMPLETE – qwen3-vl-235b-a22b5           | 0.32   | 1.60   |
+| AI_COMPLETE – snowflake-llama-3.1-405b      | 1.152  | 1.152  |
+| AI_COMPLETE – snowflake-llama-3.3-70b       | 0.432  | 0.432  |
 AI_COMPLETE – twelvelabs-pegasus-1-2  See “Snowflake AI Features Table, Other” below
   Snowflake-managed compute (AI Credits per one million Tokens)
 AI_AGG  1.85
@@ -1341,25 +1331,24 @@ Sentiment  0.09
 Summarize  0.13
 Legacy Cortex Features
 AI_COMPLETE – llama3-70b  1.21
-AI_COMPLETE – llama3-8b  0.19
 
   17
 
-| AI_EXTRACT – arctic-tilt-entity  |     |     | 9.50   |     |
+| AI_COMPLETE – llama3-8b          |     |     | 0.19   |     |
 | -------------------------------- | --- | --- | ------ | --- |
+| AI_EXTRACT – arctic-tilt-entity  |     |     | 9.50   |     |
 | AI_EXTRACT – arctic-tilt-table   |     |     | 28.40  |     |
   Snowflake-managed compute (AI Credits per one million Tokens)
-|                                |     | Input  |     | Output  |
-| ------------------------------ | --- | ------ | --- | ------- |
-| AI_COMPLETE – claude-4-sonnet  |     | 1.80   |     | 9.00    |
-| AI_COMPLETE – mistral-large    |     | 2.40   |     | 7.20    |
+|                              |     | Input  |     | Output  |
+| ---------------------------- | --- | ------ | --- | ------- |
+| AI_COMPLETE – mistral-large  |     | 2.40   |     | 7.20    |
 
 Table 6(b): Snowflake AI Features Table, Cortex Inference with Prompt Caching
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
 |                               | Input  | Output  | Cache Write  | Cache Read  |
 | ----------------------------- | ------ | ------- | ------------ | ----------- |
-| claude-4-sonnet19             | 1.50   | 7.50    | 1.875        | 0.15        |
+| claude-4-sonnet               | 1.50   | 7.50    | 1.875        | 0.15        |
 | claude-sonnet-4-5             | 1.50   | 7.50    | 1.875        | 0.15        |
 | claude-sonnet-4-6             | 1.50   | 7.50    | 1.875        | 0.15        |
 | claude-haiku-4-5              | 0.50   | 2.50    | 0.625        | 0.05        |
@@ -1396,28 +1385,24 @@ Model
 | mistral-7b               |     | 0.075  |     | 0.10    |
 | snowflake-llama-3.3-70b  |     | 0.36   |     | 0.36    |
 
-Table 6(d): Snowflake AI Features Table, Snowflake Intelligence, Cortex Agents, & Cortex Analyst via Snowflake Intelligence or Cortex
-Agents
+Table 6(d): Snowflake AI Features Table, Snowflake CoWork, Cortex Agents, & Cortex Analyst via Snowflake CoWork or Cortex Agents
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
 |                   | Input  | Output  | Cache Write  | Cache Read  |
 | ----------------- | ------ | ------- | ------------ | ----------- |
 | claude-haiku-4-5  | 0.65   | 3.25    | 0.81         | 0.06        |
 | claude-opus-4-5   | 3.25   | 16.26   | 4.07         | 0.33        |
-
-19 As further described in the Documentation, this is a legacy model.
+| claude-opus-4-6   | 3.25   | 16.26   | 4.07         | 0.33        |
+| claude-opus-4-75  | 3.25   | 16.26   | 4.07         | 0.33        |
+| claude-opus-4-85  | 3.25   | 16.26   | 4.07         | 0.33        |
 
   18
 
-Table 6(d): Snowflake AI Features Table, Snowflake Intelligence, Cortex Agents, & Cortex Analyst via Snowflake Intelligence or Cortex
-Agents
+Table 6(d): Snowflake AI Features Table, Snowflake CoWork, Cortex Agents, & Cortex Analyst via Snowflake CoWork or Cortex Agents
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
 |                      | Input  | Output  | Cache Write  | Cache Read  |
 | -------------------- | ------ | ------- | ------------ | ----------- |
-| claude-opus-4-6      | 3.25   | 16.26   | 4.07         | 0.33        |
-| claude-opus-4-75     | 3.25   | 16.26   | 4.07         | 0.33        |
-| claude-opus-4-85     | 3.25   | 16.26   | 4.07         | 0.33        |
 | claude-sonnet-4-5    | 1.95   | 9.76    | 2.44         | 0.20        |
 | claude-sonnet-4-6    | 1.95   | 9.76    | 2.44         | 0.20        |
 | gemini-2-5-flash5    | 0.18   | 1.48    | -            | 0.02        |
@@ -1433,7 +1418,7 @@ openai-gpt-5.2
 | openai-gpt-5.55               | 3.25  | 19.50  | -   | 0.33  |
 | openai-gpt-5.5-long-context5  | 6.50  | 29.25  | -   | 0.65  |
 
-Table 6(e): Snowflake AI Features Table, Cortex Code
+Table 6(e): Snowflake AI Features Table, Snowflake CoCo
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
 |                               | Input  | Output  | Cache Write  | Cache Read  |
@@ -1471,17 +1456,19 @@ Feature  Snowflake-managed compute
 AI_COMPLETE – twelvelabs-pegasus-1-2  4.5 AI Credits per one million output tokens
 0.420 AI Credits per 1,000 video seconds
 0.084 AI Credits per 1,000 audio seconds
-AI_MULTI_EMBED – twelvelabs-marengo-embed-3-0  0.060 AI Credits per 1,000 image requests
+0.060 AI Credits per 1,000 image requests
+AI_MULTI_EMBED – twelvelabs-marengo-embed-3-0  0.042 AI Credits per 1,000 text requests
+AI Parse Document – Layout   3.66 AI Credits per 1,000 pages
+| AI Parse Document – OCR   | 0.68 AI Credits per 1,000 pages  |     |     |     |
+| ------------------------- | -------------------------------- | --- | --- | --- |
+Batch Cortex Search5
+0.12 AI Credits per GB/hr of indexed data
 
   19
 
 Table 6(g): Snowflake AI Features Table, Other
 Feature Snowflake-managed compute
-0.042 AI Credits per 1,000 text requests
-AI Parse Document – Layout 3.66 AI Credits per 1,000 pages
-AI Parse Document – OCR 0.68 AI Credits per 1,000 pages
-Batch Cortex Search5 0.12 AI Credits per GB/hr of indexed data
-Cortex Analyst 67 Platform Credits per 1,000 messages20
+Cortex Analyst 67 Platform Credits per 1,000 messages19
 Cortex Search 6.3 AI Credits per GB/mo of indexed data
 A Provisioned Throughput reservation allows you to reserve continuous access to certain Snowflake AI Features for a specified, fixed term (the “Provisioned
 Throughput”), subject to Snowflake’s approval. Each Provisioned Throughput must specify: (i) the reserved Snowflake AI Feature; (ii) the term; (iii) and the
@@ -1490,7 +1477,7 @@ Provisioned Throughput throughout the term regardless of your actual usage of th
 cancellable, non-transferable, non-resellable, non-exchangeable, non-modifiable, non-refundable and non-renewable. Provisioned Throughput does not
 renew automatically.
 Table 6(h): Snowflake AI Features Table, Provisioned Throughput
-Cloud Provider Snowflake-managed compute (Platform Credits per PTU per hour)21 Term Length (months)
+Cloud Provider Snowflake-managed compute (Platform Credits per PTU per hour)20 Term Length (months)
 AWS 0.08 1
 Azure 0.10 1
 Table 7: Openflow Connector for Oracle
@@ -1528,15 +1515,17 @@ Capacity Storage Price in USD, Customer’s invoice(s) will be payable to Snowfl
 in the Order Form and further subject to the following:
 1. If Customer is in On Demand:
 a. For each invoice, Customer’s consumption for the invoiced period will be converted from USD to the relevant Foreign
-20 This pricing will only be applicable when using the Cortex Analyst API.
-21 Each Provisioned Throughput reservation is subject to minimum PTU quantities and incremental quantities, as described in the Documentation.
+Currency at the Spot Rate21 applicable for the last day of the invoiced period.
+b. Customer will receive a monthly statement reflecting its consumption for the immediately preceding month in USD.
+19 This pricing will only be applicable when using the Cortex Analyst API.
+20 Each Provisioned Throughput reservation is subject to minimum PTU quantities and incremental quantities, as described in the Documentation.
+21 The “Spot Rate” means the real-time currency conversion spot rate existing in the United States as reported by Oanda.com (or such other reputable
+foreign exchange rate platform Snowflake may use in its sole discretion).
 20
 
-Currency at the Spot Rate22 applicable for the last day of the invoiced period.
-b. Customer will receive a monthly statement reflecting its consumption for the immediately preceding month in USD.
 2. If Customer has available Capacity:
 a. Customer’s total Capacity commitment specified in the Order Form will be converted from Foreign Currency to USD at the
-Spot Rate applicable for the Processing Date23 under such Order Form (“USD Total Capacity Balance”).
+Spot Rate applicable for the Processing Date22 under such Order Form (“USD Total Capacity Balance”).
 b. In the event Customer has eligible Capacity Rollover in EUR from a Prior Order Form, any such Capacity Rollover will be
 converted to USD at the Spot Rate applicable for the Processing Date of the renewal Order Form and such amount shall be added to
 the USD Total Capacity Balance.
@@ -1565,8 +1554,6 @@ Changes to this Snowflake Service Consumption Table. This Snowflake Service Cons
 be effective on the date that Snowflake announces they are effective. This Snowflake Service Consumption Table applies to Previews, provided that
 Previews may be subject to different pricing, as may be set forth in the applicable Documentation.
 Any capitalized terms used but not defined herein shall have the meaning set forth in the Agreement or the Documentation, as applicable.
-22 The “Spot Rate” means the real-time currency conversion spot rate existing in the United States as reported by Oanda.com (or such other reputable
-foreign exchange rate platform Snowflake may use in its sole discretion).
-23 The “Processing Date” means the later of: (a) the Subscription Term Start Date or the (b) the date the Order Form is processed by Snowflake.
+22 The “Processing Date” means the later of: (a) the Subscription Term Start Date or the (b) the date the Order Form is processed by Snowflake.
 Notwithstanding the foregoing, any Additional Capacity Order will have the same Processing Date as the Underlying Order Form.
 21
