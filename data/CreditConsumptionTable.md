@@ -1,5 +1,5 @@
 Snowflake Service Consumption Table
-Effective: July 10, 2026
+Effective: July 14, 2026
 Consumption
 Generally. The Snowflake Service is a cloud data platform provided by Snowflake (“Snowflake”, “we”, “us”, “our”) to Snowflake customers (each a
 “Customer”, “you”, “your”) as a service which consumes resources for distinct functions as set forth herein and is available in several different editions
@@ -1459,50 +1459,51 @@ openai-gpt-5.6-luna5
 Table 6(e): Snowflake AI Features Table, Snowflake CoCo
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
-|                      | Input  | Output  | Cache Write  | Cache Read  |
-| -------------------- | ------ | ------- | ------------ | ----------- |
-| claude-fable-55      | 5.50   | 27.50   | 6.88         | 0.55        |
-| claude-opus-4-5      | 2.75   | 13.75   | 3.44         | 0.28        |
-| claude-opus-4-6      | 2.75   | 13.75   | 3.44         | 0.28        |
-| claude-opus-4-75     | 2.75   | 13.75   | 3.44         | 0.28        |
-| claude-opus-4-85     | 2.75   | 13.75   | 3.44         | 0.28        |
-| claude-sonnet-4-5    | 1.65   | 8.25    | 2.07         | 0.17        |
-| claude-sonnet-4-6    | 1.65   | 8.25    | 2.07         | 0.17        |
-| claude-sonnet-55,19  | 1.10   | 5.50    | 1.375        | 0.114       |
+|                    | Input  | Output  | Cache Write  | Cache Read  |
+| ------------------ | ------ | ------- | ------------ | ----------- |
+| claude-fable-55    | 5.50   | 27.50   | 6.88         | 0.55        |
+| claude-haiku-4-5   | 0.55   | 2.75    | 0.688        | 0.055       |
+| claude-opus-4-5    | 2.75   | 13.75   | 3.44         | 0.28        |
+| claude-opus-4-6    | 2.75   | 13.75   | 3.44         | 0.28        |
+| claude-opus-4-75   | 2.75   | 13.75   | 3.44         | 0.28        |
+| claude-opus-4-85   | 2.75   | 13.75   | 3.44         | 0.28        |
+| claude-sonnet-4-5  | 1.65   | 8.25    | 2.07         | 0.17        |
+| claude-sonnet-4-6  | 1.65   | 8.25    | 2.07         | 0.17        |
 
   19
 
 Table 6(e): Snowflake AI Features Table, Snowflake CoCo
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
-|                               | Input  | Output  | Cache Write  | Cache Read  |
-| ----------------------------- | ------ | ------- | ------------ | ----------- |
-| openai-gpt-5.2                | 0.97   | 7.70    | -            | 0.10        |
-| openai-gpt-5.4                | 1.38   | 8.25    | -            | 0.14        |
-| openai-gpt-5.55               | 2.75   | 16.50   | -            | 0.28        |
-| openai-gpt-5.5-long-context5  | 5.50   | 24.75   | -            | 0.55        |
-| openai-gpt-5.6-luna5          | 0.55   | 3.30    | -            | 0.055       |
-| openai-gpt-5.6-sol5           | 2.75   | 16.50   | -            | 0.275       |
-| openai-gpt-5.6-terra5         | 1.375  | 8.25    | -            | 0.138       |
+|                               |     | Input  | Output  | Cache Write  | Cache Read  |
+| ----------------------------- | --- | ------ | ------- | ------------ | ----------- |
+| claude-sonnet-55,19           |     | 1.10   | 5.50    | 1.375        | 0.114       |
+| openai-gpt-5.2                |     | 0.97   | 7.70    | -            | 0.10        |
+| openai-gpt-5.4                |     | 1.38   | 8.25    | -            | 0.14        |
+| openai-gpt-5.55               |     | 2.75   | 16.50   | -            | 0.28        |
+| openai-gpt-5.5-long-context5  |     | 5.50   | 24.75   | -            | 0.55        |
+| openai-gpt-5.6-luna5          |     | 0.55   | 3.30    | -            | 0.055       |
+| openai-gpt-5.6-sol5           |     | 2.75   | 16.50   | -            | 0.275       |
+| openai-gpt-5.6-terra5         |     | 1.375  | 8.25    | -            | 0.138       |
 
 Table 6(f): Snowflake AI Features Table, Fine-tuning5
 Snowflake-managed compute
-Feature
-|                                          |                                            | Training   | Cortex Complete (Inference)          |        |
-| ---------------------------------------- | ------------------------------------------ | ---------- | ------------------------------------ | ------ |
-|                                          | (Platform Credits per one million Tokens)  |            | (AI Credits per one million Tokens)  |        |
-| AI EXTRACT – arctic-extract – finetuned  |                                            | 0          |                                      | 9.140  |
-| Cortex Fine-tuning – llama3.1-70b        |                                            | 3.40       |                                      | 2.42   |
-| Cortex Fine-tuning – llama3.1-8b         |                                            | 0.64       |                                      | 0.38   |
-| Cortex Fine-tuning – mistral-7b          |                                            | 0.64       |                                      | 0.24   |
-| Cortex Fine-tuning – mixtral-8x7b        |                                            | 3.40       |                                      | 0.44   |
+|                                          | Feature  |                                            | Training   | Cortex Complete (Inference)          |        |
+| ---------------------------------------- | -------- | ------------------------------------------ | ---------- | ------------------------------------ | ------ |
+|                                          |          | (Platform Credits per one million Tokens)  |            | (AI Credits per one million Tokens)  |        |
+| AI EXTRACT – arctic-extract – finetuned  |          |                                            | 0          |                                      | 9.140  |
+| Cortex Fine-tuning – llama3.1-70b        |          |                                            | 3.40       |                                      | 2.42   |
+| Cortex Fine-tuning – llama3.1-8b         |          |                                            | 0.64       |                                      | 0.38   |
+| Cortex Fine-tuning – mistral-7b          |          |                                            | 0.64       |                                      | 0.24   |
+| Cortex Fine-tuning – mixtral-8x7b        |          |                                            | 3.40       |                                      | 0.44   |
 Legacy Features
-| Cortex Fine-tuning – llama3-70b  |     | 3.40  |     | 2.42  |
-| -------------------------------- | --- | ----- | --- | ----- |
-| Cortex Fine-tuning – llama3-8b   |     | 0.64  |     | 0.38  |
+| Cortex Fine-tuning – llama3-70b  |     |     | 3.40  |     | 2.42  |
+| -------------------------------- | --- | --- | ----- | --- | ----- |
+| Cortex Fine-tuning – llama3-8b   |     |     | 0.64  |     | 0.38  |
 
 Table 6(g): Snowflake AI Features Table, Other
-Feature  Snowflake-managed compute
+|     | Feature  |     | Snowflake-managed compute  |     |     |
+| --- | -------- | --- | -------------------------- | --- | --- |
 0.294 AI Credits per 1,000 video seconds
 AI_COMPLETE – twelvelabs-pegasus-1-2  4.5 AI Credits per one million output tokens
 0.420 AI Credits per 1,000 video seconds
@@ -1510,13 +1511,12 @@ AI_COMPLETE – twelvelabs-pegasus-1-2  4.5 AI Credits per one million output to
 0.060 AI Credits per 1,000 image requests
 AI_MULTI_EMBED – twelvelabs-marengo-embed-3-0  0.042 AI Credits per 1,000 text requests
 AI_PARSE_DOCUMENT – Layout   3.66 AI Credits per 1,000 pages
-| AI_PARSE_DOCUMENT– OCR   |     | 0.68 AI Credits per 1,000 pages  |     |     |
-| ------------------------ | --- | -------------------------------- | --- | --- |
+| AI_PARSE_DOCUMENT– OCR   |     |     | 0.68 AI Credits per 1,000 pages  |     |     |
+| ------------------------ | --- | --- | -------------------------------- | --- | --- |
 Batch Cortex Search5  0.12 AI Credits per GB/hr of indexed data
-| Cortex Analyst  |     | 67 Platform Credits per 1,000 messages20  |     |     |
-| --------------- | --- | ----------------------------------------- | --- | --- |
-Cortex Search
-6.3 AI Credits per GB/mo of indexed data
+| Cortex Analyst  |     |     | 67 Platform Credits per 1,000 messages20  |     |     |
+| --------------- | --- | --- | ----------------------------------------- | --- | --- |
+| Cortex Search   |     |     | 6.3 AI Credits per GB/mo of indexed data  |     |     |
 
 A Provisioned Throughput reservation allows you to reserve continuous access to certain Snowflake AI Features for a specified, fixed term (the “Provisioned
 Throughput”), subject to Snowflake’s approval. Each Provisioned Throughput must specify: (i) the reserved Snowflake AI Feature; (ii) the term; (iii) and the
@@ -1527,15 +1527,15 @@ renew automatically.
 
 Table 6(h): Snowflake AI Features Table, Provisioned Throughput
 Cloud Provider  Snowflake-managed compute (Platform Credits per PTU per hour)21  Term Length (months)
-| AWS    |     | 0.08  |     | 1   |
-| ------ | --- | ----- | --- | --- |
-| Azure  |     | 0.10  |     | 1   |
+| AWS    |     |     | 0.08  |     | 1   |
+| ------ | --- | --- | ----- | --- | --- |
+| Azure  |     |     | 0.10  |     | 1   |
 
 Table 7: Openflow Connector for Oracle
-Feature  Unit Price per Licensed Core per month
-| License                |     |     | $70  |     |
-| ---------------------- | --- | --- | ---- | --- |
-| Support & Maintenance  |     |     | $40  |     |
+|                        | Feature  |     | Unit Price per Licensed Core per month  |      |     |
+| ---------------------- | -------- | --- | --------------------------------------- | ---- | --- |
+| License                |          |     |                                         | $70  |     |
+| Support & Maintenance  |          |     |                                         | $40  |     |
 
 20 This pricing will only be applicable when using the Cortex Analyst API.
 21  Each Provisioned Throughput reservation is subject to minimum PTU quantities and incremental quantities, as described in the Documentation.
@@ -1599,13 +1599,13 @@ f. Customer will receive a monthly statement reflecting its USD Total Capacity B
 applicable FX Adjustment and Customer’s consumption for the immediately preceding month in USD.
 3. For Free Usage. In the event of any Free Usage, Customer’s Free Usage will be converted at the Spot Rate applicable for the
 Processing Date.
-For the avoidance of doubt, the above terms apply whether Capacity is purchased directly from Snowflake or through a Snowflake-authorized reseller. For
 22 The “Spot Rate” means the real-time currency conversion spot rate existing in the United States as reported by Oanda.com (or such other reputable
 foreign exchange rate platform Snowflake may use in its sole discretion).
 23 The “Processing Date” means the later of: (a) the Subscription Term Start Date or the (b) the date the Order Form is processed by Snowflake.
 Notwithstanding the foregoing, any Additional Capacity Order will have the same Processing Date as the Underlying Order Form.
 21
 
+For the avoidance of doubt, the above terms apply whether Capacity is purchased directly from Snowflake or through a Snowflake-authorized reseller. For
 Order Forms (including Underlying Order Forms) placed through resellers, the date of the “Billing Event,” “Processing Date” and/or “FX Adjustment” will be
 determined based on the date that the reseller is billed or places the corresponding order, as applicable.
 Changes to this Snowflake Service Consumption Table. This Snowflake Service Consumption Table may be updated from time to time. Changes shall
