@@ -1,5 +1,5 @@
 Snowflake Service Consumption Table
-Effective: July 24, 2026
+Effective: July 31, 2026
 Consumption
 Generally. The Snowflake Service is a cloud data platform provided by Snowflake (“Snowflake”, “we”, “us”, “our”) to Snowflake customers (each a
 “Customer”, “you”, “your”) as a service which consumes resources for distinct functions as set forth herein and is available in several different editions
@@ -908,16 +908,17 @@ Cloud Provider  Region
 | GCP    | Australia Southeast 2 (Melbourne)     |     | $5.00      |     | $0.40      |
 
 Table 4(a): AWS Data Transfer Pricing
-SPCS Data
-|        |     | Data Transfer To  |                   | Data Transfer To  | Data Transfer To  |
-| ------ | --- | ----------------- | ----------------- | ----------------- | ----------------- |
-| Cloud  |     |                   | Transfer To Same  |                   |                   |
-|        |     | Same Cloud        | Cloud Provider,   | Same Cloud        | Different Cloud   |
-Data Transfer Source Region  Provider, Same  Provider, Different  Provider or
-| Provider  |     |                  | Same Region (per  |                   |                     |
-| --------- | --- | ---------------- | ----------------- | ----------------- | ------------------- |
-|           |     | Region (per TB)  |                   | Region (per TB)   | Internet (per TB)   |
-TB)
+|     |     | Non-SPCS and       | SPCS and       |                   |                   |
+| --- | --- | ------------------ | -------------- | ----------------- | ----------------- |
+|     |     | Non-Postgres Data  | Postgres Data  | Data Transfer To  | Data Transfer To  |
+Cloud  Transfer To Same  Transfer To Same  Same Cloud  Different Cloud
+Data Transfer Source Region
+|     |     | Cloud Provider,  | Cloud Provider,  | Provider, Different  | Provider or  |
+| --- | --- | ---------------- | ---------------- | -------------------- | ------------ |
+Provider
+|     |     | Same Region (per  | Same Region (per  | Region (per TB)   | Internet (per TB)   |
+| --- | --- | ----------------- | ----------------- | ----------------- | ------------------- |
+|     |     | TB)               | TB)               |                   |                     |
 AWS  US East (Northern Virginia)  $0.00  $3.07  $20.00  $90.00
 | AWS   | US West (Oregon)          | $0.00  | $3.07  | $20.00   | $90.00   |
 | ----- | ------------------------- | ------ | ------ | -------- | -------- |
@@ -933,54 +934,52 @@ AWS  US East (Northern Virginia)  $0.00  $3.07  $20.00  $90.00
 | AWS   | Europe (London)           | $0.00  | $3.07  | $20.00   | $90.00   |
 | AWS   | Asia Pacific (Seoul)      | $0.00  | $3.07  | $80.00   | $126.00  |
 | AWS   | US Gov West 1             | $0.00  | $7.17  | $30.00   | $155.00  |
-| AWS   |                           | $0.00  | $7.17  | $30.00   | $155.00  |
-US Gov West 1 (Fedramp High
 
   12
 
 Table 4(a): AWS Data Transfer Pricing
-|     |     |     | Data Transfer To  |     |     | SPCS Data  |     | Data Transfer To  |     | Data Transfer To  |     |
-| --- | --- | --- | ----------------- | --- | --- | ---------- | --- | ----------------- | --- | ----------------- | --- |
-Transfer To Same
-| Cloud     |                              |     |     | Same Cloud      |     |                  |     | Same Cloud           |     | Different Cloud  |              |
-| --------- | ---------------------------- | --- | --- | --------------- | --- | ---------------- | --- | -------------------- | --- | ---------------- | ------------ |
-|           | Data Transfer Source Region  |     |     |                 |     | Cloud Provider,  |     |                      |     |                  |              |
-| Provider  |                              |     |     | Provider, Same  |     |                  |     | Provider, Different  |     |                  | Provider or  |
-Same Region (per
-|     |     |     |     | Region (per TB)  |     |     |     | Region (per TB)   |     | Internet (per TB)   |     |
-| --- | --- | --- | --- | ---------------- | --- | --- | --- | ----------------- | --- | ------------------- | --- |
-TB)
-Plus)
-| AWS  | Europe (Stockholm)    |     |     | $0.00  |     | $3.07  |     |     | $20.00  |     | $90.00   |
-| ---- | --------------------- | --- | --- | ------ | --- | ------ | --- | --- | ------- | --- | -------- |
-| AWS  | Asia Pacific (Osaka)  |     |     | $0.00  |     | $3.07  |     |     | $90.00  |     | $114.00  |
+|     |     |     |                    | Non-SPCS and  |     | SPCS and       |     |                   |     |                   |     |
+| --- | --- | --- | ------------------ | ------------- | --- | -------------- | --- | ----------------- | --- | ----------------- | --- |
+|     |     |     | Non-Postgres Data  |               |     | Postgres Data  |     | Data Transfer To  |     | Data Transfer To  |     |
+Cloud  Transfer To Same  Transfer To Same  Same Cloud  Different Cloud
+Data Transfer Source Region
+Provider  Cloud Provider,  Cloud Provider,  Provider, Different  Provider or
+|     |     |     | Same Region (per  |      |     | Same Region (per  |     | Region (per TB)   |     | Internet (per TB)   |     |
+| --- | --- | --- | ----------------- | ---- | --- | ----------------- | --- | ----------------- | --- | ------------------- | --- |
+|     |     |     |                   | TB)  |     | TB)               |     |                   |     |                     |     |
+US Gov West 1 (Fedramp High
+| AWS  |                       | Plus)  |     | $0.00  |     | $7.17  |     |     | $30.00  |     | $155.00  |
+| ---- | --------------------- | ------ | --- | ------ | --- | ------ | --- | --- | ------- | --- | -------- |
+| AWS  | Europe (Stockholm)    |        |     | $0.00  |     | $3.07  |     |     | $20.00  |     | $90.00   |
+| AWS  | Asia Pacific (Osaka)  |        |     | $0.00  |     | $3.07  |     |     | $90.00  |     | $114.00  |
 AWS  South America East 1 (São Paulo)  $0.00  $3.07  $138.00  $150.00
-| AWS  |                         | EU (Paris)  |     | $0.00  |     | $3.07  |     |          | $20.00  |     | $90.00   |
-| ---- | ----------------------- | ----------- | --- | ------ | --- | ------ | --- | -------- | ------- | --- | -------- |
-| AWS  | Asia Pacific (Jakarta)  |             |     | $0.00  |     | $3.07  |     | $100.00  |         |     | $132.00  |
+| AWS  |                         | EU (Paris)  |     | $0.00  |     | $3.07  |     |     | $20.00   |     | $90.00   |
+| ---- | ----------------------- | ----------- | --- | ------ | --- | ------ | --- | --- | -------- | --- | -------- |
+| AWS  | Asia Pacific (Jakarta)  |             |     | $0.00  |     | $3.07  |     |     | $100.00  |     | $132.00  |
 AWS  US Gov East 1 (Fedramp High Plus)  $0.00  $7.17  $30.00  $155.00
 | AWS  |                       | EU (Zurich)  |     | $0.00  |     | $3.07  |     |     | $20.00  |     | $90.00   |
 | ---- | --------------------- | ------------ | --- | ------ | --- | ------ | --- | --- | ------- | --- | -------- |
 | AWS  | US Gov West 1 (DoD)   |              |     | $0.00  |     | $7.17  |     |     | $30.00  |     | $155.00  |
 US West (Commercial Gov -
-| AWS  |                          | Oregon)             |     | $0.00  |     | $3.07  |     |          | $20.00  |     | $90.00   |
-| ---- | ------------------------ | ------------------- | --- | ------ | --- | ------ | --- | -------- | ------- | --- | -------- |
-| AWS  |                          | Africa (Cape Town)  |     | $0.00  |     | $3.07  |     | $147.00  |         |     | $154.00  |
-| AWS  | Asia Pacific (Malaysia)  |                     |     | $0.00  |     | $3.07  |     |          | $80.00  |     | $108.00  |
-| AWS  | Asia Pacific (Thailand)  |                     |     | $0.00  |     | $3.07  |     |          | $80.00  |     | $108.00  |
+| AWS  |     |     |     | $0.00  |     | $3.07  |     |     | $20.00  |     | $90.00  |
+| ---- | --- | --- | --- | ------ | --- | ------ | --- | --- | ------- | --- | ------- |
+Oregon)
+| AWS  | Africa (Cape Town)       |     |     | $0.00  |     | $3.07  |     |     | $147.00  |     | $154.00  |
+| ---- | ------------------------ | --- | --- | ------ | --- | ------ | --- | --- | -------- | --- | -------- |
+| AWS  | Asia Pacific (Malaysia)  |     |     | $0.00  |     | $3.07  |     |     | $80.00   |     | $108.00  |
+| AWS  | Asia Pacific (Thailand)  |     |     | $0.00  |     | $3.07  |     |     | $80.00   |     | $108.00  |
 AWS  Asia Pacific (New Zealand)  $0.00  $3.07  $98.00  $114.00
 
 Table 4(b): Azure Data Transfer Pricing
 Destination Region (per TB)
-|     |     |     |     |     |     | Same Cloud Provider  |     |     |     |     | Different  |
-| --- | --- | --- | --- | --- | --- | -------------------- | --- | --- | --- | --- | ---------- |
-Cloud
-|           | Data Transfer Source Region  |     |              |     |         |                    |            |     |            |     | C l o u d          |
-| --------- | ---------------------------- | --- | ------------ | --- | ------- | ------------------ | ---------- | --- | ---------- | --- | ------------------ |
-| Provider  |                              |     |              |     | S P     | C S   D a ta       | Same       |     | Different  |     |                    |
-|           |                              |     | Same Region  |     | Tra n   | s fe r ,  S a m e  |            |     |            |     | Pro v i d e r  or  |
-|           |                              |     |              |     |         |                    | Continent  |     | Continent  |     |                    |
-|           |                              |     |              |     | Region  |                    |            |     |            |     | Internet           |
+| Cloud  |     |     |     |     |     | Same Cloud Provider  |     |     |     |     | Different  |
+| ------ | --- | --- | --- | --- | --- | -------------------- | --- | --- | --- | --- | ---------- |
+Data Transfer Source Region
+| Provider  |     |     |              |     |     | S P C S   D a ta     |            |     |            |     | C l o u d          |
+| --------- | --- | --- | ------------ | --- | --- | -------------------- | ---------- | --- | ---------- | --- | ------------------ |
+|           |     |     |              |     |     |                      | Same       |     | Different  |     | Pro v i d e r  or  |
+|           |     |     | Same Region  |     | Tra | n s fe r ,  S a m e  |            |     |            |     |                    |
+|           |     |     |              |     |     | Region               | Continent  |     | Continent  |     | Internet           |
 Azure  East US 2 (Virginia)  $0.00  $0.00  $20.00  $50.00  $87.50
 Azure  West US 2 (Washington)  $0.00  $0.00  $20.00  $50.00  $87.50
 Azure  West Europe (Netherlands)  $0.00  $0.00  $20.00  $50.00  $87.50
@@ -1000,28 +999,23 @@ Azure  UK South (London)  $0.00  $0.00  $20.00  $50.00  $87.50
 | ------------------------------- | --- | --- | --- | ------ | --- | ------ | ------- | --- | ------- | --- | ------- |
 | Azure                           |     |     |     | $0.00  |     |        | $20.00  |     | $50.00  |     | $87.50  |
 Plus)
-| Azure  |     | Mexico Central  |     | $0.00  |     | $0.00  | $20.00  |     | $50.00  |     | $87.00   |
-| ------ | --- | --------------- | --- | ------ | --- | ------ | ------- | --- | ------- | --- | -------- |
-| Azure  |     | Korea Central   |     | $0.00  |     | $0.00  | $80.00  |     | $80.00  |     | $120.00  |
-| Azure  |     | Sweden Central  |     | $0.00  |     | $0.00  | $20.00  |     | $50.00  |     | $87.00   |
+| Azure  | Mexico Central  |                |     | $0.00  |     | $0.00  | $20.00  |     | $50.00  |     | $87.00   |
+| ------ | --------------- | -------------- | --- | ------ | --- | ------ | ------- | --- | ------- | --- | -------- |
+| Azure  |                 | Korea Central  |     | $0.00  |     | $0.00  | $80.00  |     | $80.00  |     | $120.00  |
+| Azure  | Sweden Central  |                |     | $0.00  |     | $0.00  | $20.00  |     | $50.00  |     | $87.00   |
 Azure  East US (Virginia)  $0.00  $0.00  $20.00  $50.00  $87.00
 
 Table 4(c): GCP Data Transfer Pricing
 | Cloud  Data Transfer  |     |     |     |     | To Same Cloud Provider (TB)  |     |     |     |     |     |     |
 | --------------------- | --- | --- | --- | --- | ---------------------------- | --- | --- | --- | --- | --- | --- |
 Source
-Provider  Same  SPCS Data  North  Europe  Asia  Indonesia  Middle  Oceania  Africa  South
-Region
+Provider
+Region  Same  SPCS Data  North  Europe  Asia  Indonesia  Middle  Oceania  Africa  South
 |     |     | Region  Transfer,  |     | America  |     |     |     | East  |     |     | America  |
 | --- | --- | ------------------ | --- | -------- | --- | --- | --- | ----- | --- | --- | -------- |
 Same Region
-US Central 1
-| GCP  |     | $0  $6.22  |     | $20  | $50  | $80  | $100  | $110  | $100  | $110  | $140  |
-| ---- | --- | ---------- | --- | ---- | ---- | ---- | ----- | ----- | ----- | ----- | ----- |
+GCP  US Central 1  $0  $6.22  $20  $50  $80  $100  $110  $100  $110  $140
 (Iowa)
-| GCP  |     | $0  $6.22  |     | $20  | $50  | $80  | $100  | $110  | $100  | $110  | $140  |
-| ---- | --- | ---------- | --- | ---- | ---- | ---- | ----- | ----- | ----- | ----- | ----- |
-US East 4 (N.
 
 |     |     |     |     |     |     |     |     |     |     |     | 13  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1035,14 +1029,19 @@ Region
 |     | Region  | Transfer,  | America  |     |     |     | East  |     |     | America  |
 | --- | ------- | ---------- | -------- | --- | --- | --- | ----- | --- | --- | -------- |
 Same Region
+US East 4 (N.
+| GCP  | $0  | $6.22  | $20  | $50  | $80  | $100  | $110  | $100  | $110  | $140  |
+| ---- | --- | ------ | ---- | ---- | ---- | ----- | ----- | ----- | ----- | ----- |
 Virginia)
-GCP  Europe West 4  $0  $6.22  $50  $20  $80  $100  $110  $100  $110  $140
-(Netherlands)
-Europe West 2
-GCP  (London)  $0  $6.22  $50  $20  $80  $100  $110  $100  $110  $140
-Europe West 3
+Europe West 4
 | GCP  | $0  | $6.22  | $50  | $20  | $80  | $100  | $110  | $100  | $110  | $140  |
 | ---- | --- | ------ | ---- | ---- | ---- | ----- | ----- | ----- | ----- | ----- |
+(Netherlands)
+Europe West 2
+| GCP  | $0  | $6.22  | $50  | $20  | $80  | $100  | $110  | $100  | $110  | $140  |
+| ---- | --- | ------ | ---- | ---- | ---- | ----- | ----- | ----- | ----- | ----- |
+(London)
+GCP  Europe West 3  $0  $6.22  $50  $20  $80  $100  $110  $100  $110  $140
 (Frankfurt)
 Middle East
 GCP  Central 2  $0  $6.22  $110  $110  $110  $110  $80  $110  $110  $140
@@ -1052,30 +1051,31 @@ GCP  Southeast 2  $0  $6.22  $100  $100  $100  $80  $110  $80  $140  $140
 (Melbourne)
 
 Table 4(c): GCP Data Transfer Pricing cont’d
-To Different Cloud Provider or Internet (TB)
-Cloud  Data Transfer
-|                          | North    |         |        | Australia, Indonesia, Korea, South  |                        |     |     | Middle East9  |     |          |
-| ------------------------ | -------- | ------- | ------ | ----------------------------------- | ---------------------- | --- | --- | ------------- | --- | -------- |
-| Provider  Source Region  |          | Europe  | Asia8  |                                     |                        |     |     |               |     | China10  |
-|                          | America  |         |        |                                     | America, Saudi Arabia  |     |     | and Africa    |     |          |
+| Cloud  |     |     |     | To Different Cloud Provider or Internet (TB)  |     |     |     |     |     |     |
+| ------ | --- | --- | --- | --------------------------------------------- | --- | --- | --- | --- | --- | --- |
+Data Transfer
+Source Region  North  Australia, Indonesia, Korea, South  Middle East9
+| Provider  |          | Europe  | Asia8  |     |                        |     |     |             |     | China10  |
+| --------- | -------- | ------- | ------ | --- | ---------------------- | --- | --- | ----------- | --- | -------- |
+|           | America  |         |        |     | America, Saudi Arabia  |     |     | and Africa  |     |          |
 US Central 1
 | GCP  | $120  | $120  | $120  |     |     | $190  |     | $150  |     | $230  |
 | ---- | ----- | ----- | ----- | --- | --- | ----- | --- | ----- | --- | ----- |
 (Iowa)
-| GCP  US East 4 (N.  | $120  | $120  | $120  |     |     | $190  |     | $150  |     | $230  |
-| ------------------- | ----- | ----- | ----- | --- | --- | ----- | --- | ----- | --- | ----- |
+US East 4 (N.
+| GCP  | $120  | $120  | $120  |     |     | $190  |     | $150  |     | $230  |
+| ---- | ----- | ----- | ----- | --- | --- | ----- | --- | ----- | --- | ----- |
 Virginia)
 Europe West 4
-| GCP  (Netherlands)  | $120  | $120  | $120  |     |     | $190  |     | $150  |     | $230  |
-| ------------------- | ----- | ----- | ----- | --- | --- | ----- | --- | ----- | --- | ----- |
-Europe West 2
 | GCP  | $120  | $120  | $120  |     |     | $190  |     | $150  |     | $230  |
 | ---- | ----- | ----- | ----- | --- | --- | ----- | --- | ----- | --- | ----- |
+(Netherlands)
+| GCP  Europe West 2  | $120  | $120  | $120  |     |     | $190  |     | $150  |     | $230  |
+| ------------------- | ----- | ----- | ----- | --- | --- | ----- | --- | ----- | --- | ----- |
 (London)
 Europe West 3
-| GCP  | $120  | $120  | $120  |     |     | $190  |     | $150  |     | $230  |
-| ---- | ----- | ----- | ----- | --- | --- | ----- | --- | ----- | --- | ----- |
-(Frankfurt)
+| GCP  (Frankfurt)  | $120  | $120  | $120  |     |     | $190  |     | $150  |     | $230  |
+| ----------------- | ----- | ----- | ----- | --- | --- | ----- | --- | ----- | --- | ----- |
 Middle East
 | GCP  Central 2  | $190  | $190  | $190  |     |     | $190  |     | $190  |     | $230  |
 | --------------- | ----- | ----- | ----- | --- | --- | ----- | --- | ----- | --- | ----- |
@@ -1097,10 +1097,9 @@ billed at the price listed below.
 Table 4(e): Outbound Privatelink Pricing
 Data Processed (per TB)
 Private Endpoint (per
-| Cloud Provider  | Region  |     |                            |     |     |             |     |            | Anything over 5  |     |
-| --------------- | ------- | --- | -------------------------- | --- | --- | ----------- | --- | ---------- | ---------------- | --- |
-|                 |         |     | endpoint per 1,000 hours)  |     |     | First 1 PB  |     | Next 4 PB  |                  |     |
-PB
+Cloud Provider  Region  endpoint per 1,000 hours)  Anything over 5
+|     |     |     |     |     |     | First 1 PB  | Next 4 PB  |     |     | PB  |
+| --- | --- | --- | --- | --- | --- | ----------- | ---------- | --- | --- | --- |
 AWS  US East (Northern Virginia)  $10.00  $10.24  $6.14  $4.09
 | AWS  | US West (Oregon)  |     |     | $10.00  |     | $10.24  |     | $6.14  |     | $4.09  |
 | ---- | ----------------- | --- | --- | ------- | --- | ------- | --- | ------ | --- | ------ |
