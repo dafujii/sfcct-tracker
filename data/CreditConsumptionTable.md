@@ -1,5 +1,5 @@
 Snowflake Service Consumption Table
-Effective: August 10, 2026
+Effective: August 17, 2026
 Consumption
 Generally. The Snowflake Service is a cloud data platform provided by Snowflake (“Snowflake”, “we”, “us”, “our”) to Snowflake customers (each a
 “Customer”, “you”, “your”) as a service which consumes resources for distinct functions as set forth herein and is available in several different editions
@@ -1346,6 +1346,7 @@ AI_PARSE_DOCUMENT – OCR  See “Snowflake AI Features Table, Other” below
 | AI_REDACT         |     |     | 0.69  |     |
 | ----------------- | --- | --- | ----- | --- |
 | AI_SENTIMENT      |     |     | 1.60  |     |
+| AI_SUMMARIZE5     |     |     | 1.60  |     |
 | AI_SUMMARIZE_AGG  |     |     | 1.85  |     |
 | AI_TRANSCRIBE     |     |     | 0.97  |     |
 | AI_TRANSLATE      |     |     | 1.63  |     |
@@ -1363,40 +1364,42 @@ Legacy Cortex Features
 Table 6(b): Snowflake AI Features Table, Cortex Inference with Prompt Caching
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
-|                              | Input  | Output  | Cache Write  | Cache Read  |
-| ---------------------------- | ------ | ------- | ------------ | ----------- |
-| claude-4-sonnet              | 1.50   | 7.50    | 1.875        | 0.15        |
-| claude-fable-55              | 5.00   | 25.00   | 6.25         | 0.50        |
-| claude-sonnet-4-5            | 1.50   | 7.50    | 1.875        | 0.15        |
-| claude-sonnet-4-6            | 1.50   | 7.50    | 1.875        | 0.15        |
-| claude-sonnet-520            | 1.00   | 5.00    | 1.25         | 0.10        |
-| claude-haiku-4-5             | 0.50   | 2.50    | 0.625        | 0.05        |
-| claude-opus-4-5              | 2.50   | 12.50   | 3.125        | 0.25        |
-| claude-opus-4-6              | 2.50   | 12.50   | 3.125        | 0.25        |
-| claude-opus-4-75             | 2.50   | 12.50   | 3.125        | 0.25        |
-| claude-opus-4-85             | 2.50   | 12.50   | 3.125        | 0.25        |
-| claude-opus-55               | 2.50   | 12.50   | 3.125        | 0.25        |
-| grok-4.205                   | 0.625  | 1.25    | -            | 0.1         |
-| grok-4.20-long-context5      | 1.25   | 2.5     | -            | 0.2         |
-| grok-4.35                    | 0.625  | 1.25    | -            | 0.1         |
-| grok-4.3-long-context5       | 1.25   | 2.5     | -            | 0.2         |
-| openai-gpt-4.1               | 1.00   | 4.00    | -            | 0.25        |
-| openai-gpt-55                | 0.625  | 5.00    | -            | 0.065       |
-| openai-gpt-5-mini5           | 0.125  | 1.00    | -            | 0.015       |
-| openai-gpt-5-nano5           | 0.03   | 0.22    | -            | 0.005       |
-| openai-gpt-5.1               | 0.625  | 5.00    | -            | 0.065       |
-| openai-gpt-5.2               | 0.875  | 7.00    | -            | 0.09        |
-| openai-gpt-5.4               | 1.25   | 7.50    | -            | 0.125       |
-| openai-gpt-5.4-long-context  | 2.50   | 11.25   | -            | 0.25        |
-| openai-gpt-5.4-mini5         | 0.375  | 2.25    | -            | 0.038       |
-openai-gpt-5.4-nano5
-|                               | 0.10  | 0.625  | -   | 0.01   |
-| ----------------------------- | ----- | ------ | --- | ------ |
-| openai-gpt-5.55               | 2.50  | 15.00  | -   | 0.25   |
-| openai-gpt-5.5-long-context5  | 5.00  | 22.50  | -   | 0.50   |
-| openai-gpt-5.6-luna5          | 0.50  | 3.00   | -   | 0.05   |
-| openai-gpt-5.6-sol5           | 2.50  | 15.00  | -   | 0.25   |
-| openai-gpt-5.6-terra5         | 1.25  | 7.50   | -   | 0.125  |
+|                    | Input  | Output  | Cache Write  | Cache Read  |
+| ------------------ | ------ | ------- | ------------ | ----------- |
+| claude-4-sonnet    | 1.50   | 7.50    | 1.875        | 0.15        |
+| claude-fable-55    | 5.00   | 25.00   | 6.25         | 0.50        |
+| claude-sonnet-4-5  | 1.50   | 7.50    | 1.875        | 0.15        |
+| claude-sonnet-4-6  | 1.50   | 7.50    | 1.875        | 0.15        |
+claude-sonnet-520
+|                              | 1.00   | 5.00   | 1.25   | 0.10   |
+| ---------------------------- | ------ | ------ | ------ | ------ |
+| claude-haiku-4-5             | 0.50   | 2.50   | 0.625  | 0.05   |
+| claude-opus-4-5              | 2.50   | 12.50  | 3.125  | 0.25   |
+| claude-opus-4-6              | 2.50   | 12.50  | 3.125  | 0.25   |
+| claude-opus-4-75             | 2.50   | 12.50  | 3.125  | 0.25   |
+| claude-opus-4-85             | 2.50   | 12.50  | 3.125  | 0.25   |
+| claude-opus-55               | 2.50   | 12.50  | 3.125  | 0.25   |
+| grok-4.205                   | 0.625  | 1.25   | -      | 0.1    |
+| grok-4.20-long-context5      | 1.25   | 2.5    | -      | 0.2    |
+| grok-4.35                    | 0.625  | 1.25   | -      | 0.1    |
+| grok-4.3-long-context5       | 1.25   | 2.5    | -      | 0.2    |
+| openai-gpt-4.1               | 1.00   | 4.00   | -      | 0.25   |
+| openai-gpt-55                | 0.625  | 5.00   | -      | 0.065  |
+| openai-gpt-5-mini5           | 0.125  | 1.00   | -      | 0.015  |
+| openai-gpt-5-nano5           | 0.03   | 0.22   | -      | 0.005  |
+| openai-gpt-5.1               | 0.625  | 5.00   | -      | 0.065  |
+| openai-gpt-5.2               | 0.875  | 7.00   | -      | 0.09   |
+| openai-gpt-5.4               | 1.25   | 7.50   | -      | 0.125  |
+| openai-gpt-5.4-long-context  | 2.50   | 11.25  | -      | 0.25   |
+openai-gpt-5.4-mini5
+|                               | 0.375  | 2.25   | -   | 0.038  |
+| ----------------------------- | ------ | ------ | --- | ------ |
+| openai-gpt-5.4-nano5          | 0.10   | 0.625  | -   | 0.01   |
+| openai-gpt-5.55               | 2.50   | 15.00  | -   | 0.25   |
+| openai-gpt-5.5-long-context5  | 5.00   | 22.50  | -   | 0.50   |
+| openai-gpt-5.6-luna5          | 0.50   | 3.00   | -   | 0.05   |
+| openai-gpt-5.6-sol5           | 2.50   | 15.00  | -   | 0.25   |
+| openai-gpt-5.6-terra5         | 1.25   | 7.50   | -   | 0.125  |
 
   18
 
@@ -1417,38 +1420,36 @@ Model
 Table 6(d): Snowflake AI Features Table, Snowflake CoWork, Cortex Agents, & Cortex Analyst via Snowflake CoWork or Cortex Agents
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
-|                    | Input  | Output  | Cache Write  | Cache Read  |
-| ------------------ | ------ | ------- | ------------ | ----------- |
-| claude-fable-55    | 6.50   | 32.50   | 8.13         | 0.65        |
-| claude-haiku-4-5   | 0.65   | 3.25    | 0.81         | 0.06        |
-| claude-opus-4-5    | 3.25   | 16.26   | 4.07         | 0.33        |
-| claude-opus-4-6    | 3.25   | 16.26   | 4.07         | 0.33        |
-| claude-opus-4-75   | 3.25   | 16.26   | 4.07         | 0.33        |
-| claude-opus-4-85   | 3.25   | 16.26   | 4.07         | 0.33        |
-| claude-opus-55     | 3.25   | 16.26   | 4.07         | 0.33        |
-| claude-sonnet-4-5  | 1.95   | 9.76    | 2.44         | 0.20        |
-| claude-sonnet-4-6  | 1.95   | 9.76    | 2.44         | 0.20        |
-claude-sonnet-520
-|                         | 1.30   | 6.50   | 1.625  | 0.13   |
-| ----------------------- | ------ | ------ | ------ | ------ |
-| gemini-2-5-flash5       | 0.18   | 1.48   | -      | 0.02   |
-| gemini-3.1-flash-lite5  | 0.163  | 0.975  | -      | 0.017  |
-| gemini-3.1-pro5         | 1.30   | 7.81   | -      | 0.13   |
-| gemini-3.5-flash5       | 0.98   | 5.85   | -      | 0.10   |
-| openai-gpt-4.1          | 1.30   | 5.20   | -      | 0.33   |
-| openai-gpt-55           | 0.81   | 6.51   | -      | 0.08   |
-openai-gpt-5-mini5
-|                               | 0.16  | 1.30   | -   | 0.02   |
-| ----------------------------- | ----- | ------ | --- | ------ |
-| openai-gpt-5.1                | 0.81  | 6.51   | -   | 0.08   |
-| openai-gpt-5.2                | 1.14  | 9.11   | -   | 0.11   |
-| openai-gpt-5.4                | 1.63  | 9.76   | -   | 0.16   |
-| openai-gpt-5.55               | 3.25  | 19.50  | -   | 0.33   |
-| openai-gpt-5.5-long-context5  | 6.50  | 29.25  | -   | 0.65   |
-| openai-gpt-5.6-luna5          | 0.65  | 3.90   | -   | 0.065  |
-openai-gpt-5.6-sol5
-|                        | 3.25   | 19.50  | -   | 0.325  |
+|                         | Input  | Output  | Cache Write  | Cache Read  |
+| ----------------------- | ------ | ------- | ------------ | ----------- |
+| claude-fable-55         | 6.50   | 32.50   | 8.13         | 0.65        |
+| claude-haiku-4-5        | 0.65   | 3.25    | 0.81         | 0.06        |
+| claude-opus-4-5         | 3.25   | 16.26   | 4.07         | 0.33        |
+| claude-opus-4-6         | 3.25   | 16.26   | 4.07         | 0.33        |
+| claude-opus-4-75        | 3.25   | 16.26   | 4.07         | 0.33        |
+| claude-opus-4-85        | 3.25   | 16.26   | 4.07         | 0.33        |
+| claude-opus-55          | 3.25   | 16.26   | 4.07         | 0.33        |
+| claude-sonnet-4-5       | 1.95   | 9.76    | 2.44         | 0.20        |
+| claude-sonnet-4-6       | 1.95   | 9.76    | 2.44         | 0.20        |
+| claude-sonnet-520       | 1.30   | 6.50    | 1.625        | 0.13        |
+| gemini-2-5-flash5       | 0.18   | 1.48    | -            | 0.02        |
+| gemini-3.1-flash-lite5  | 0.163  | 0.975   | -            | 0.017       |
+| gemini-3.1-pro5         | 1.30   | 7.81    | -            | 0.13        |
+| gemini-3.5-flash5       | 0.98   | 5.85    | -            | 0.10        |
+| openai-gpt-4.1          | 1.30   | 5.20    | -            | 0.33        |
+openai-gpt-55
+|                               | 0.81  | 6.51   | -   | 0.08  |
+| ----------------------------- | ----- | ------ | --- | ----- |
+| openai-gpt-5-mini5            | 0.16  | 1.30   | -   | 0.02  |
+| openai-gpt-5.1                | 0.81  | 6.51   | -   | 0.08  |
+| openai-gpt-5.2                | 1.14  | 9.11   | -   | 0.11  |
+| openai-gpt-5.4                | 1.63  | 9.76   | -   | 0.16  |
+| openai-gpt-5.55               | 3.25  | 19.50  | -   | 0.33  |
+| openai-gpt-5.5-long-context5  | 6.50  | 29.25  | -   | 0.65  |
+openai-gpt-5.6-luna5
+|                        | 0.65   | 3.90   | -   | 0.065  |
 | ---------------------- | ------ | ------ | --- | ------ |
+| openai-gpt-5.6-sol5    | 3.25   | 19.50  | -   | 0.325  |
 | openai-gpt-5.6-terra5  | 1.625  | 9.75   | -   | 0.163  |
 
 Table 6(e): Snowflake AI Features Table, Snowflake CoCo
@@ -1464,47 +1465,47 @@ Model
 | claude-opus-4-85   | 2.75   | 13.75   | 3.44         | 0.28        |
 | claude-opus-55     | 2.75   | 13.75   | 3.44         | 0.28        |
 | claude-sonnet-4-5  | 1.65   | 8.25    | 2.07         | 0.17        |
-| claude-sonnet-4-6  | 1.65   | 8.25    | 2.07         | 0.17        |
 
   19
 
 Table 6(e): Snowflake AI Features Table, Snowflake CoCo
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
-|                    | Input  | Output  | Cache Write  | Cache Read  |
-| ------------------ | ------ | ------- | ------------ | ----------- |
-| claude-sonnet-520  | 1.10   | 5.50    | 1.375        | 0.114       |
-gemini-3.1-flash-lite5
-|                               | 0.138  | 0.825  | -   | 0.014  |
-| ----------------------------- | ------ | ------ | --- | ------ |
-| openai-gpt-5.2                | 0.97   | 7.70   | -   | 0.10   |
-| openai-gpt-5.4                | 1.38   | 8.25   | -   | 0.14   |
-| openai-gpt-5.55               | 2.75   | 16.50  | -   | 0.28   |
-| openai-gpt-5.5-long-context5  | 5.50   | 24.75  | -   | 0.55   |
-| openai-gpt-5.6-luna5          | 0.55   | 3.30   | -   | 0.055  |
-| openai-gpt-5.6-sol5           | 2.75   | 16.50  | -   | 0.275  |
-openai-gpt-5.6-terra5
-|     | 1.375  | 8.25  | -   | 0.138  |
-| --- | ------ | ----- | --- | ------ |
+|                    |     | Input  | Output  | Cache Write  | Cache Read  |
+| ------------------ | --- | ------ | ------- | ------------ | ----------- |
+| claude-sonnet-4-6  |     | 1.65   | 8.25    | 2.07         | 0.17        |
+claude-sonnet-520
+|                               |     | 1.10   | 5.50   | 1.375  | 0.114  |
+| ----------------------------- | --- | ------ | ------ | ------ | ------ |
+| gemini-3.1-flash-lite5        |     | 0.138  | 0.825  | -      | 0.014  |
+| openai-gpt-5.2                |     | 0.97   | 7.70   | -      | 0.10   |
+| openai-gpt-5.4                |     | 1.38   | 8.25   | -      | 0.14   |
+| openai-gpt-5.55               |     | 2.75   | 16.50  | -      | 0.28   |
+| openai-gpt-5.5-long-context5  |     | 5.50   | 24.75  | -      | 0.55   |
+| openai-gpt-5.6-luna5          |     | 0.55   | 3.30   | -      | 0.055  |
+openai-gpt-5.6-sol5
+|                        |     | 2.75   | 16.50  | -   | 0.275  |
+| ---------------------- | --- | ------ | ------ | --- | ------ |
+| openai-gpt-5.6-terra5  |     | 1.375  | 8.25   | -   | 0.138  |
 
 Table 6(f): Snowflake AI Features Table, Fine-tuning5
 Snowflake-managed compute
-Feature
-|                                          |                                            | Training   | Cortex Complete (Inference)          |        |
-| ---------------------------------------- | ------------------------------------------ | ---------- | ------------------------------------ | ------ |
-|                                          | (Platform Credits per one million Tokens)  |            | (AI Credits per one million Tokens)  |        |
-| AI EXTRACT – arctic-extract – finetuned  |                                            | 0          |                                      | 9.140  |
-| Cortex Fine-tuning – llama3.1-70b        |                                            | 3.40       |                                      | 2.42   |
-| Cortex Fine-tuning – llama3.1-8b         |                                            | 0.64       |                                      | 0.38   |
-| Cortex Fine-tuning – mistral-7b          |                                            | 0.64       |                                      | 0.24   |
-| Cortex Fine-tuning – mixtral-8x7b        |                                            | 3.40       |                                      | 0.44   |
+|                                          | Feature  |                                            | Training   | Cortex Complete (Inference)          |        |
+| ---------------------------------------- | -------- | ------------------------------------------ | ---------- | ------------------------------------ | ------ |
+|                                          |          | (Platform Credits per one million Tokens)  |            | (AI Credits per one million Tokens)  |        |
+| AI EXTRACT – arctic-extract – finetuned  |          |                                            | 0          |                                      | 9.140  |
+| Cortex Fine-tuning – llama3.1-70b        |          |                                            | 3.40       |                                      | 2.42   |
+| Cortex Fine-tuning – llama3.1-8b         |          |                                            | 0.64       |                                      | 0.38   |
+| Cortex Fine-tuning – mistral-7b          |          |                                            | 0.64       |                                      | 0.24   |
+| Cortex Fine-tuning – mixtral-8x7b        |          |                                            | 3.40       |                                      | 0.44   |
 Legacy Features
-| Cortex Fine-tuning – llama3-70b  |     | 3.40  |     | 2.42  |
-| -------------------------------- | --- | ----- | --- | ----- |
-| Cortex Fine-tuning – llama3-8b   |     | 0.64  |     | 0.38  |
+| Cortex Fine-tuning – llama3-70b  |     |     | 3.40  |     | 2.42  |
+| -------------------------------- | --- | --- | ----- | --- | ----- |
+| Cortex Fine-tuning – llama3-8b   |     |     | 0.64  |     | 0.38  |
 
 Table 6(g): Snowflake AI Features Table, Other
-Feature  Snowflake-managed compute
+|     | Feature  |     | Snowflake-managed compute  |     |     |
+| --- | -------- | --- | -------------------------- | --- | --- |
 0.294 AI Credits per 1,000 video seconds
 AI_COMPLETE – twelvelabs-pegasus-1-2  4.5 AI Credits per one million output tokens
 0.420 AI Credits per 1,000 video seconds
@@ -1512,13 +1513,12 @@ AI_COMPLETE – twelvelabs-pegasus-1-2  4.5 AI Credits per one million output to
 0.060 AI Credits per 1,000 image requests
 AI_MULTI_EMBED – twelvelabs-marengo-embed-3-0  0.042 AI Credits per 1,000 text requests
 AI_PARSE_DOCUMENT – Layout   3.66 AI Credits per 1,000 pages
-| AI_PARSE_DOCUMENT– OCR   |     | 0.68 AI Credits per 1,000 pages  |     |     |
-| ------------------------ | --- | -------------------------------- | --- | --- |
+| AI_PARSE_DOCUMENT– OCR   |     |     | 0.68 AI Credits per 1,000 pages  |     |     |
+| ------------------------ | --- | --- | -------------------------------- | --- | --- |
 Batch Cortex Search5  0.12 AI Credits per GB/hr of indexed data
-67 Platform Credits per 1,000 messages21
-Cortex Analyst
-| Cortex Search   |     | 6.3 AI Credits per GB/mo of indexed data  |     |     |
-| --------------- | --- | ----------------------------------------- | --- | --- |
+| Cortex Analyst  |     |     | 67 Platform Credits per 1,000 messages21  |     |     |
+| --------------- | --- | --- | ----------------------------------------- | --- | --- |
+| Cortex Search   |     |     | 6.3 AI Credits per GB/mo of indexed data  |     |     |
 
 A Provisioned Throughput reservation allows you to reserve continuous access to certain Snowflake AI Features for a specified, fixed term (the “Provisioned
 Throughput”), subject to Snowflake’s approval. Each Provisioned Throughput must specify: (i) the reserved Snowflake AI Feature; (ii) the term; (iii) and the
@@ -1529,9 +1529,9 @@ renew automatically.
 
 Table 6(h): Snowflake AI Features Table, Provisioned Throughput
 Cloud Provider  Snowflake-managed compute (Platform Credits per PTU per hour)22  Term Length (months)
-| AWS    |     | 0.08  |     | 1   |
-| ------ | --- | ----- | --- | --- |
-| Azure  |     | 0.10  |     | 1   |
+| AWS    |     |     | 0.08  |     | 1   |
+| ------ | --- | --- | ----- | --- | --- |
+| Azure  |     |     | 0.10  |     | 1   |
 
 21 This pricing will only be applicable when using the Cortex Analyst API.
 22  Each Provisioned Throughput reservation is subject to minimum PTU quantities and incremental quantities, as described in the Documentation.
