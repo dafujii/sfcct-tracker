@@ -1,5 +1,5 @@
 Snowflake Service Consumption Table
-Effective: September 16, 2026
+Effective: September 23, 2026
 Consumption
 Generally. The Snowflake Service is a cloud data platform provided by Snowflake (“Snowflake”, “we”, “us”, “our”) to Snowflake customers (each a
 “Customer”, “you”, “your”) as a service which consumes resources for distinct functions as set forth herein and is available in several different editions
@@ -1257,12 +1257,15 @@ their observed size regardless of compression.
 
   16
 
-| AI_COMPLETE – claude-opus-4-5               | 3.00   | 15.00  |
+| AI_COMPLETE – claude-opus-4-5   | 3.00  | 15.00  |
+| ------------------------------- | ----- | ------ |
+| AI_COMPLETE – claude-opus-4-6   | 3.00  | 15.00  |
+| AI_COMPLETE – claude-opus-4-75  | 3.00  | 15.00  |
+| AI_COMPLETE – claude-opus-4-85  | 3.00  | 15.00  |
+| AI_COMPLETE – claude-opus-55    | 3.00  | 15.00  |
+AI_COMPLETE – claude-opus-5-55
+|                                             | 2.40   | 12.00  |
 | ------------------------------------------- | ------ | ------ |
-| AI_COMPLETE – claude-opus-4-6               | 3.00   | 15.00  |
-| AI_COMPLETE – claude-opus-4-75              | 3.00   | 15.00  |
-| AI_COMPLETE – claude-opus-4-85              | 3.00   | 15.00  |
-| AI_COMPLETE – claude-opus-55                | 3.00   | 15.00  |
 | AI_COMPLETE – claude-sonnet-4-5             | 1.80   | 9.00   |
 | AI_COMPLETE – claude-sonnet-4-6             | 1.80   | 9.00   |
 | AI_COMPLETE – claude-sonnet-5               | 1.20   | 6.00   |
@@ -1283,48 +1286,47 @@ their observed size regardless of compression.
 | AI_COMPLETE – grok-4.35                     | 0.75   | 1.50   |
 | AI_COMPLETE – grok-4.3-long-context5        | 1.50   | 3.00   |
 | AI_COMPLETE – grok-4.65                     | 1.20   | 3.60   |
+| AI_COMPLETE – kimi-k35                      | 1.80   | 9.00   |
 | AI_COMPLETE – llama3.1-70b                  | 0.432  | 0.432  |
 | AI_COMPLETE – llama3.1-8b                   | 0.132  | 0.132  |
 | AI_COMPLETE – llama3.3-70b                  | 0.432  | 0.432  |
 | AI_COMPLETE – llama4-maverick               | 0.144  | 0.582  |
 | AI_COMPLETE – ministral-3-8b                | 0.09   | 0.09   |
 | AI_COMPLETE – mistral-large2                | 1.20   | 3.60   |
-AI_COMPLETE – mistral-large35
-|                                    | 0.30   | 0.90  |
-| ---------------------------------- | ------ | ----- |
-| AI_COMPLETE – mistral-7b           | 0.09   | 0.12  |
-| AI_COMPLETE – mixtral-8x7b         | 0.27   | 0.42  |
-| AI_COMPLETE – openai-gpt-4.1       | 1.20   | 4.80  |
-| AI_COMPLETE – openai-gpt-55        | 0.75   | 6.00  |
-| AI_COMPLETE – openai-gpt-5-mini5   | 0.15   | 1.20  |
-| AI_COMPLETE – openai-gpt-5-nano5   | 0.033  | 0.24  |
-AI_COMPLETE – openai-gpt-5.1
-|                                                  | 0.75  | 6.00   |
-| ------------------------------------------------ | ----- | ------ |
-| AI_COMPLETE – openai-gpt-5.2                     | 1.05  | 8.40   |
-| AI_COMPLETE – openai-gpt-5.4                     | 1.50  | 9.00   |
-| AI_COMPLETE – openai-gpt-5.4-long-context        | 3.00  | 13.50  |
-| AI_COMPLETE – openai-gpt-5.4-mini5               | 0.45  | 2.70   |
-| AI_COMPLETE – openai-gpt-5.4-nano5               | 0.12  | 0.75   |
-| AI_COMPLETE – openai-gpt-5.55                    | 3.00  | 18.00  |
-| AI_COMPLETE – openai-gpt-5.5-long-context5       | 6.00  | 27.00  |
-| AI_COMPLETE – openai-gpt-5.6-luna5               | 0.12  | 0.72   |
-| AI_COMPLETE – openai-gpt-5.6-luna-long-context5  | 0.24  | 1.08   |
-| AI_COMPLETE – openai-gpt-5.6-sol5                | 3.00  | 18.00  |
-| AI_COMPLETE – openai-gpt-5.6-terra5              | 1.20  | 7.20   |
+| AI_COMPLETE – mistral-large35               | 0.30   | 0.90   |
+| AI_COMPLETE – mistral-7b                    | 0.09   | 0.12   |
+| AI_COMPLETE – mixtral-8x7b                  | 0.27   | 0.42   |
+| AI_COMPLETE – openai-gpt-4.1                | 1.20   | 4.80   |
+| AI_COMPLETE – openai-gpt-55                 | 0.75   | 6.00   |
+AI_COMPLETE – openai-gpt-5-mini5
+|                                                  | 0.15   | 1.20   |
+| ------------------------------------------------ | ------ | ------ |
+| AI_COMPLETE – openai-gpt-5-nano5                 | 0.033  | 0.24   |
+| AI_COMPLETE – openai-gpt-5.1                     | 0.75   | 6.00   |
+| AI_COMPLETE – openai-gpt-5.2                     | 1.05   | 8.40   |
+| AI_COMPLETE – openai-gpt-5.4                     | 1.50   | 9.00   |
+| AI_COMPLETE – openai-gpt-5.4-long-context        | 3.00   | 13.50  |
+| AI_COMPLETE – openai-gpt-5.4-mini5               | 0.45   | 2.70   |
+| AI_COMPLETE – openai-gpt-5.4-nano5               | 0.12   | 0.75   |
+| AI_COMPLETE – openai-gpt-5.55                    | 3.00   | 18.00  |
+| AI_COMPLETE – openai-gpt-5.5-long-context5       | 6.00   | 27.00  |
+| AI_COMPLETE – openai-gpt-5.6-luna5               | 0.12   | 0.72   |
+| AI_COMPLETE – openai-gpt-5.6-luna-long-context5  | 0.24   | 1.08   |
+| AI_COMPLETE – openai-gpt-5.6-sol5                | 3.00   | 18.00  |
+| AI_COMPLETE – openai-gpt-5.6-terra5              | 1.20   | 7.20   |
 AI_COMPLETE – openai-gpt-5.6-terra-long-context5  2.40  10.80
 | AI_COMPLETE – openai-gpt-6-astra5  | 6.00  | 30.00  |
 | ---------------------------------- | ----- | ------ |
-| AI_COMPLETE – pixtral-large        | 1.20  | 3.60   |
-| AI_COMPLETE – qwen3-32b5           | 0.09  | 0.36   |
 
 21 This feature is available under promotional pricing for a limited time. Prices will increase by 100% on January 1, 2027, or such other date as Snowflake
 determines, as reflected in the Snowflake Service Consumption Table or otherwise communicated by Snowflake.
 
   17
 
-| AI_COMPLETE – qwen3-next-80b-a3b5   |     | 0.09  |     | 0.72  |
+| AI_COMPLETE – pixtral-large         |     | 1.20  |     | 3.60  |
 | ----------------------------------- | --- | ----- | --- | ----- |
+| AI_COMPLETE – qwen3-32b5            |     | 0.09  |     | 0.36  |
+| AI_COMPLETE – qwen3-next-80b-a3b5   |     | 0.09  |     | 0.72  |
 | AI_COMPLETE – qwen3-vl-235b-a22b5   |     | 0.32  |     | 1.60  |
 AI_COMPLETE – twelvelabs-pegasus-1-2  See “Snowflake AI Features Table, Other” below
   Snowflake-managed compute (AI Credits per one million Tokens)
@@ -1377,30 +1379,34 @@ Model
 | claude-haiku-4-5   | 0.50   | 2.50    | 0.625        | 0.05        |
 | claude-opus-4-5    | 2.50   | 12.50   | 3.125        | 0.25        |
 | claude-opus-4-6    | 2.50   | 12.50   | 3.125        | 0.25        |
-| claude-opus-4-75   | 2.50   | 12.50   | 3.125        | 0.25        |
-| claude-opus-4-85   | 2.50   | 12.50   | 3.125        | 0.25        |
-claude-opus-55
-|                          | 2.50   | 12.50  | 3.125  | 0.25  |
-| ------------------------ | ------ | ------ | ------ | ----- |
-| glm-5.35                 | 0.70   | 2.20   | -      | 0.13  |
-| grok-4.205               | 0.625  | 1.25   | -      | 0.1   |
-| grok-4.20-long-context5  | 1.25   | 2.5    | -      | 0.2   |
-| grok-4.35                | 0.625  | 1.25   | -      | 0.1   |
+claude-opus-4-75
+|                   | 2.50  | 12.50  | 3.125  | 0.25  |
+| ----------------- | ----- | ------ | ------ | ----- |
+| claude-opus-4-85  | 2.50  | 12.50  | 3.125  | 0.25  |
+| claude-opus-55    | 2.50  | 12.50  | 3.125  | 0.25  |
+| claude-opus-5-55  | 2.00  | 10.00  | 2.5    | 0.10  |
+| glm-5.35          | 0.70  | 2.20   | -      | 0.13  |
 
   18
 
 Table 6(b): Snowflake AI Features Table, Cortex Inference with Prompt Caching
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
-|                         | Input  | Output  | Cache Write  | Cache Read  |
-| ----------------------- | ------ | ------- | ------------ | ----------- |
-| grok-4.3-long-context5  | 1.25   | 2.5     | -            | 0.2         |
-grok-4.65
-|                                     | 1.0    | 3.0    | -      | 0.25   |
+|             | Input  | Output  | Cache Write  | Cache Read  |
+| ----------- | ------ | ------- | ------------ | ----------- |
+| grok-4.205  | 0.625  | 1.25    | -            | 0.1         |
+grok-4.20-long-context5
+|                         | 1.25   | 2.5   | -      | 0.2    |
+| ----------------------- | ------ | ----- | ------ | ------ |
+| grok-4.35               | 0.625  | 1.25  | -      | 0.1    |
+| grok-4.3-long-context5  | 1.25   | 2.5   | -      | 0.2    |
+| grok-4.65               | 1.0    | 3.0   | -      | 0.25   |
+| kimi-k35                | 1.50   | 7.50  | 1.875  | 0.15   |
+| openai-gpt-4.1          | 1.00   | 4.00  | -      | 0.25   |
+| openai-gpt-55           | 0.625  | 5.00  | -      | 0.065  |
+openai-gpt-5-mini5
+|                                     | 0.125  | 1.00   | -      | 0.015  |
 | ----------------------------------- | ------ | ------ | ------ | ------ |
-| openai-gpt-4.1                      | 1.00   | 4.00   | -      | 0.25   |
-| openai-gpt-55                       | 0.625  | 5.00   | -      | 0.065  |
-| openai-gpt-5-mini5                  | 0.125  | 1.00   | -      | 0.015  |
 | openai-gpt-5-nano5                  | 0.03   | 0.22   | -      | 0.005  |
 | openai-gpt-5.1                      | 0.625  | 5.00   | -      | 0.065  |
 | openai-gpt-5.2                      | 0.875  | 7.00   | -      | 0.09   |
@@ -1434,45 +1440,42 @@ Model
 Table 6(d): Snowflake AI Features Table, Snowflake CoWork, Cortex Agents, & Cortex Analyst via Snowflake CoWork or Cortex Agents
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
-|     | Input  | Output  | Cache Write  | Cache Read  |
-| --- | ------ | ------- | ------------ | ----------- |
-claude-fable-55
-|                         | 6.50   | 32.50  | 8.13   | 0.65   |
-| ----------------------- | ------ | ------ | ------ | ------ |
-| claude-fable-5.15       | 6.50   | 32.50  | 8.125  | 0.163  |
-| claude-haiku-4-5        | 0.65   | 3.25   | 0.81   | 0.06   |
-| claude-opus-4-5         | 3.25   | 16.26  | 4.07   | 0.33   |
-| claude-opus-4-6         | 3.25   | 16.26  | 4.07   | 0.33   |
-| claude-opus-4-75        | 3.25   | 16.26  | 4.07   | 0.33   |
-| claude-opus-4-85        | 3.25   | 16.26  | 4.07   | 0.33   |
-| claude-opus-55          | 3.25   | 16.26  | 4.07   | 0.33   |
-| claude-sonnet-4-5       | 1.95   | 9.76   | 2.44   | 0.20   |
-| claude-sonnet-4-6       | 1.95   | 9.76   | 2.44   | 0.20   |
-| claude-sonnet-5         | 1.30   | 6.50   | 1.625  | 0.13   |
-| gemini-2-5-flash5       | 0.18   | 1.48   | -      | 0.02   |
-| gemini-3.1-flash-lite5  | 0.163  | 0.975  | -      | 0.017  |
-| gemini-3.1-pro5         | 1.30   | 7.81   | -      | 0.13   |
+|                    | Input  | Output  | Cache Write  | Cache Read  |
+| ------------------ | ------ | ------- | ------------ | ----------- |
+| claude-fable-55    | 6.50   | 32.50   | 8.13         | 0.65        |
+| claude-fable-5.15  | 6.50   | 32.50   | 8.125        | 0.163       |
+| claude-haiku-4-5   | 0.65   | 3.25    | 0.81         | 0.06        |
+| claude-opus-4-5    | 3.25   | 16.26   | 4.07         | 0.33        |
+| claude-opus-4-6    | 3.25   | 16.26   | 4.07         | 0.33        |
+| claude-opus-4-75   | 3.25   | 16.26   | 4.07         | 0.33        |
+| claude-opus-4-85   | 3.25   | 16.26   | 4.07         | 0.33        |
+| claude-opus-55     | 3.25   | 16.26   | 4.07         | 0.33        |
+| claude-opus-5-55   | 2.60   | 13.00   | 3.25         | 0.13        |
+| claude-sonnet-4-5  | 1.95   | 9.76    | 2.44         | 0.20        |
 
   19
 
 Table 6(d): Snowflake AI Features Table, Snowflake CoWork, Cortex Agents, & Cortex Analyst via Snowflake CoWork or Cortex Agents
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
-|                    | Input  | Output  | Cache Write  | Cache Read  |
-| ------------------ | ------ | ------- | ------------ | ----------- |
-| gemini-3.5-flash5  | 0.98   | 5.85    | -            | 0.10        |
-gemini-3.7-flash5, 21
-|                        | 0.488  | 2.438  | -   | 0.049  |
-| ---------------------- | ------ | ------ | --- | ------ |
-| gemini-3.8-flash5, 21  | 0.488  | 2.438  | -   | 0.049  |
-| grok-4.65              | 1.3    | 3.9    | -   | 0.325  |
-| openai-gpt-4.1         | 1.30   | 5.20   | -   | 0.33   |
-| openai-gpt-55          | 0.81   | 6.51   | -   | 0.08   |
-| openai-gpt-5-mini5     | 0.16   | 1.30   | -   | 0.02   |
-| openai-gpt-5.1         | 0.81   | 6.51   | -   | 0.08   |
-openai-gpt-5.2
-|                                     | 1.14  | 9.11   | -      | 0.11   |
+|                         | Input  | Output  | Cache Write  | Cache Read  |
+| ----------------------- | ------ | ------- | ------------ | ----------- |
+| claude-sonnet-4-6       | 1.95   | 9.76    | 2.44         | 0.20        |
+| claude-sonnet-5         | 1.30   | 6.50    | 1.625        | 0.13        |
+| gemini-2-5-flash5       | 0.18   | 1.48    | -            | 0.02        |
+| gemini-3.1-flash-lite5  | 0.163  | 0.975   | -            | 0.017       |
+| gemini-3.1-pro5         | 1.30   | 7.81    | -            | 0.13        |
+| gemini-3.5-flash5       | 0.98   | 5.85    | -            | 0.10        |
+| gemini-3.7-flash5, 21   | 0.488  | 2.438   | -            | 0.049       |
+| gemini-3.8-flash5, 21   | 0.488  | 2.438   | -            | 0.049       |
+grok-4.65
+|                                     | 1.3   | 3.9    | -      | 0.325  |
 | ----------------------------------- | ----- | ------ | ------ | ------ |
+| openai-gpt-4.1                      | 1.30  | 5.20   | -      | 0.33   |
+| openai-gpt-55                       | 0.81  | 6.51   | -      | 0.08   |
+| openai-gpt-5-mini5                  | 0.16  | 1.30   | -      | 0.02   |
+| openai-gpt-5.1                      | 0.81  | 6.51   | -      | 0.08   |
+| openai-gpt-5.2                      | 1.14  | 9.11   | -      | 0.11   |
 | openai-gpt-5.4                      | 1.63  | 9.76   | -      | 0.16   |
 | openai-gpt-5.55                     | 3.25  | 19.50  | -      | 0.33   |
 | openai-gpt-5.5-long-context5        | 6.50  | 29.25  | -      | 0.65   |
@@ -1486,26 +1489,27 @@ openai-gpt-5.2
 Table 6(e): Snowflake AI Features Table, Snowflake CoCo
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
-|                    | Input  | Output  | Cache Write  | Cache Read  |
-| ------------------ | ------ | ------- | ------------ | ----------- |
-| claude-fable-55    | 5.50   | 27.50   | 6.88         | 0.55        |
-| claude-fable-5.15  | 5.50   | 27.50   | 6.875        | 0.138       |
-| claude-haiku-4-5   | 0.55   | 2.75    | 0.688        | 0.055       |
-| claude-opus-4-5    | 2.75   | 13.75   | 3.44         | 0.28        |
-| claude-opus-4-6    | 2.75   | 13.75   | 3.44         | 0.28        |
-| claude-opus-4-75   | 2.75   | 13.75   | 3.44         | 0.28        |
-claude-opus-4-85
-|                         | 2.75   | 13.75  | 3.44   | 0.28   |
-| ----------------------- | ------ | ------ | ------ | ------ |
-| claude-opus-55          | 2.75   | 13.75  | 3.44   | 0.28   |
-| claude-sonnet-4-5       | 1.65   | 8.25   | 2.07   | 0.17   |
-| claude-sonnet-4-6       | 1.65   | 8.25   | 2.07   | 0.17   |
-| claude-sonnet-5         | 1.10   | 5.50   | 1.375  | 0.114  |
-| gemini-3.1-flash-lite5  | 0.138  | 0.825  | -      | 0.014  |
-| gemini-3.7-flash5, 21   | 0.413  | 2.063  | -      | 0.041  |
-gemini-3.8-flash5, 21
-|                                     | 0.413  | 2.063  | -      | 0.041  |
+|                  | Input  | Output  | Cache Write  | Cache Read  |
+| ---------------- | ------ | ------- | ------------ | ----------- |
+| claude-fable-55  | 5.50   | 27.50   | 6.88         | 0.55        |
+claude-fable-5.15
+|                   | 5.50  | 27.50  | 6.875  | 0.138  |
+| ----------------- | ----- | ------ | ------ | ------ |
+| claude-haiku-4-5  | 0.55  | 2.75   | 0.688  | 0.055  |
+| claude-opus-4-5   | 2.75  | 13.75  | 3.44   | 0.28   |
+| claude-opus-4-6   | 2.75  | 13.75  | 3.44   | 0.28   |
+| claude-opus-4-75  | 2.75  | 13.75  | 3.44   | 0.28   |
+| claude-opus-4-85  | 2.75  | 13.75  | 3.44   | 0.28   |
+| claude-opus-55    | 2.75  | 13.75  | 3.44   | 0.28   |
+claude-opus-5-55
+|                                     | 2.20   | 11.00  | 2.75   | 0.11   |
 | ----------------------------------- | ------ | ------ | ------ | ------ |
+| claude-sonnet-4-5                   | 1.65   | 8.25   | 2.07   | 0.17   |
+| claude-sonnet-4-6                   | 1.65   | 8.25   | 2.07   | 0.17   |
+| claude-sonnet-5                     | 1.10   | 5.50   | 1.375  | 0.114  |
+| gemini-3.1-flash-lite5              | 0.138  | 0.825  | -      | 0.014  |
+| gemini-3.7-flash5, 21               | 0.413  | 2.063  | -      | 0.041  |
+| gemini-3.8-flash5, 21               | 0.413  | 2.063  | -      | 0.041  |
 | grok-4.65                           | 1.1    | 3.3    | -      | 0.275  |
 | openai-gpt-5.2                      | 0.97   | 7.70   | -      | 0.10   |
 | openai-gpt-5.4                      | 1.38   | 8.25   | -      | 0.14   |
@@ -1516,30 +1520,34 @@ gemini-3.8-flash5, 21
 | openai-gpt-5.6-sol5                 | 2.75   | 16.50  | -      | 0.275  |
 | openai-gpt-5.6-terra5               | 1.10   | 6.60   | 1.375  | 0.11   |
 | openai-gpt-5.6-terra-long-context5  | 2.20   | 9.90   | 2.75   | 0.22   |
-| openai-gpt-6-astra5                 | 5.50   | 27.50  | 6.875  | 0.55   |
 
   20
 
+Table 6(e): Snowflake AI Features Table, Snowflake CoCo
+Snowflake-managed compute (AI Credits per one million Tokens)
+Model
+|                      |     | Input  | Output  | Cache Write  | Cache Read  |
+| -------------------- | --- | ------ | ------- | ------------ | ----------- |
+| openai-gpt-6-astra5  |     | 5.50   | 27.50   | 6.875        | 0.55        |
+
 Table 6(f): Snowflake AI Features Table, Fine-tuning5
 Snowflake-managed compute
-Feature
-|     |     | Training   | Cortex Complete (Inference)   |     |
-| --- | --- | ---------- | ----------------------------- | --- |
-(Platform Credits per one million Tokens)  (AI Credits per one million Tokens)
-| AI EXTRACT – arctic-extract – finetuned  |     | 0     |     | 9.140  |
-| ---------------------------------------- | --- | ----- | --- | ------ |
-| Cortex Fine-tuning – llama3.1-70b        |     | 3.40  |     | 2.42   |
-| Cortex Fine-tuning – llama3.1-8b         |     | 0.64  |     | 0.38   |
-| Cortex Fine-tuning – mistral-7b          |     | 0.64  |     | 0.24   |
-| Cortex Fine-tuning – mixtral-8x7b        |     | 3.40  |     | 0.44   |
+|                                          | Feature  |                                            | Training   | Cortex Complete (Inference)          |        |
+| ---------------------------------------- | -------- | ------------------------------------------ | ---------- | ------------------------------------ | ------ |
+|                                          |          | (Platform Credits per one million Tokens)  |            | (AI Credits per one million Tokens)  |        |
+| AI EXTRACT – arctic-extract – finetuned  |          |                                            | 0          |                                      | 9.140  |
+| Cortex Fine-tuning – llama3.1-70b        |          |                                            | 3.40       |                                      | 2.42   |
+| Cortex Fine-tuning – llama3.1-8b         |          |                                            | 0.64       |                                      | 0.38   |
+| Cortex Fine-tuning – mistral-7b          |          |                                            | 0.64       |                                      | 0.24   |
+| Cortex Fine-tuning – mixtral-8x7b        |          |                                            | 3.40       |                                      | 0.44   |
 Legacy Features
-| Cortex Fine-tuning – llama3-70b  |     | 3.40  |     | 2.42  |
-| -------------------------------- | --- | ----- | --- | ----- |
-| Cortex Fine-tuning – llama3-8b   |     | 0.64  |     | 0.38  |
+| Cortex Fine-tuning – llama3-70b  |     |     | 3.40  |     | 2.42  |
+| -------------------------------- | --- | --- | ----- | --- | ----- |
+| Cortex Fine-tuning – llama3-8b   |     |     | 0.64  |     | 0.38  |
 
 Table 6(g): Snowflake AI Features Table, Other
-|     | Feature  |     | Snowflake-managed compute  |     |
-| --- | -------- | --- | -------------------------- | --- |
+|     | Feature  |     | Snowflake-managed compute  |     |     |
+| --- | -------- | --- | -------------------------- | --- | --- |
 0.294 AI Credits per 1,000 video seconds
 AI_COMPLETE – twelvelabs-pegasus-1-2  4.5 AI Credits per one million output tokens
 0.420 AI Credits per 1,000 video seconds
@@ -1547,14 +1555,16 @@ AI_COMPLETE – twelvelabs-pegasus-1-2  4.5 AI Credits per one million output to
 0.060 AI Credits per 1,000 image requests
 AI_MULTI_EMBED – twelvelabs-marengo-embed-3-0  0.042 AI Credits per 1,000 text requests
 AI_PARSE_DOCUMENT – Layout   3.66 AI Credits per 1,000 pages
-| AI_PARSE_DOCUMENT– OCR   |     | 0.68 AI Credits per 1,000 pages  |     |     |
-| ------------------------ | --- | -------------------------------- | --- | --- |
-AI Sensitive Data Classification – openai-gpt-5-mini5  0.15 AI Credits per one million input tokens
+| AI_PARSE_DOCUMENT– OCR   |     |     | 0.68 AI Credits per 1,000 pages  |     |     |
+| ------------------------ | --- | --- | -------------------------------- | --- | --- |
+0.15 AI Credits per one million input tokens
+AI Sensitive Data Classification – openai-gpt-5-mini5
 1.2 AI Credits per one million output tokens
 Batch Cortex Search5  0.12 AI Credits per GB/hr of indexed data
-| Cortex Analyst  |     | 67 Platform Credits per 1,000 messages22  |     |     |
-| --------------- | --- | ----------------------------------------- | --- | --- |
-| Cortex Search   |     | 6.3 AI Credits per GB/mo of indexed data  |     |     |
+| Cortex Analyst  |     |     | 67 Platform Credits per 1,000 messages22  |     |     |
+| --------------- | --- | --- | ----------------------------------------- | --- | --- |
+Cortex Search
+6.3 AI Credits per GB/mo of indexed data
 
 A Provisioned Throughput reservation allows you to reserve continuous access to certain Snowflake AI Features for a specified, fixed term (the “Provisioned
 Throughput”), subject to Snowflake’s approval. Each Provisioned Throughput must specify: (i) the reserved Snowflake AI Feature; (ii) the term; (iii) and the
@@ -1565,37 +1575,24 @@ renew automatically.
 
 Table 6(h): Snowflake AI Features Table, Provisioned Throughput
 Cloud Provider  Snowflake-managed compute (Platform Credits per PTU per hour)23  Term Length (months)
-| AWS    |     | 0.08  |     | 1   |
-| ------ | --- | ----- | --- | --- |
-| Azure  |     | 0.10  |     | 1   |
-
-Table 7: Openflow Connector for Oracle
-Unit Price per Licensed Core24
-|                        | Fee Type  |     | 36-Month Commitment25  | 12-Month Commitment26  |
-| ---------------------- | --------- | --- | ---------------------- | ---------------------- |
-| License                |           |     | $70 per month          | $2,520                 |
-| Support & Maintenance  |           |     | $40 per month          | $600 per year          |
-
-Table 8: Organization Usage
-Records Powering Views (per Month)  Platform Credits per month
-| <1 million  |     |     | 0   |     |
-| ----------- | --- | --- | --- | --- |
+| AWS    |     |     | 0.08  |     | 1   |
+| ------ | --- | --- | ----- | --- | --- |
+| Azure  |     |     | 0.10  |     | 1   |
 
 22 This pricing will only be applicable when using the Cortex Analyst API.
 23  Each Provisioned Throughput reservation is subject to minimum PTU quantities and incremental quantities, as described in the Documentation.
-24 A “Licensed Core” is a single processing core in a CPU, multiplied by the Licensing Factor, where such processing core is: (i) running an Oracle
-database; and (ii) connected to Openflow Connector for Oracle. The “Licensing Factor” means the then-applicable “Core Processor Licensing Factor,” as
-described in the “Oracle Processor Core Factor Table” made available at https://www.oracle.com/contracts/docs/processor-core-factor-table-070634.pdf
-(or successor URL as Oracle America, Inc. may designate), as may be updated from time to time.
-25 Subject to the terms of the Openflow Connector for Oracle Addendum, (i) license and S&M fees for the initial 36-month term are billed monthly, and (ii)
-after month 36, the license fee is paid in full and S&M fees auto-renew in 12-month increments, billed monthly.
-26 Subject to the terms of the Openflow Connector for Oracle Addendum, (i) license fee is billed upfront, and (ii) S&M fee is billed upfront at the start of the
-12-month commitment, which auto-renews in 12-month increments.
 
   21
 
+Table 7: Openflow Connector for Oracle
+Unit Price per Licensed Core24
+Fee Type
+36-Month Commitment25 12-Month Commitment26
+License $70 per month $2,520
+Support & Maintenance $40 per month $600 per year
 Table 8: Organization Usage
 Records Powering Views (per Month) Platform Credits per month
+<1 million 0
 1 million £ Records < 10 million 2
 10 million £ Records 50 million 11
 50 million £ Records < 250 million 50
@@ -1637,6 +1634,20 @@ total Capacity commitment specified in such Additional Capacity Order will be co
 Rate then-applicable for the Underlying Order Form and will be added to the aggregate USD Total Capacity Balance covering both
 the Underlying Order Form and the Additional Capacity Order.
 d. Each invoice issued to Customer under the Order Form constitutes a “Billing Event” and the following shall apply with
+24 A “Licensed Core” is a single processing core in a CPU, multiplied by the Licensing Factor, where such processing core is: (i) running an Oracle
+database; and (ii) connected to Openflow Connector for Oracle. The “Licensing Factor” means the then-applicable “Core Processor Licensing Factor,” as
+described in the “Oracle Processor Core Factor Table” made available at https://www.oracle.com/contracts/docs/processor-core-factor-table-070634.pdf
+(or successor URL as Oracle America, Inc. may designate), as may be updated from time to time.
+25 Subject to the terms of the Openflow Connector for Oracle Addendum, (i) license and S&M fees for the initial 36-month term are billed monthly, and (ii)
+after month 36, the license fee is paid in full and S&M fees auto-renew in 12-month increments, billed monthly.
+26 Subject to the terms of the Openflow Connector for Oracle Addendum, (i) license fee is billed upfront, and (ii) S&M fee is billed upfront at the start of the
+12-month commitment, which auto-renews in 12-month increments.
+27 The “Spot Rate” means the real-time currency conversion spot rate existing in the United States as reported by Oanda.com (or such other reputable
+foreign exchange rate platform Snowflake may use in its sole discretion).
+28 The “Processing Date” means the later of: (a) the Subscription Term Start Date or the (b) the date the Order Form is processed by Snowflake.
+Notwithstanding the foregoing, any Additional Capacity Order will have the same Processing Date as the Underlying Order Form.
+22
+
 respect to each Billing Event:
 i. Customer’s Capacity payment obligation amount in connection with each Billing Event will be converted from
 Foreign Currency to USD at the Spot Rate applicable for the invoice date of each Billing Event; and
@@ -1652,12 +1663,6 @@ applicable FX Adjustment and Customer’s consumption for the immediately preced
 Processing Date.
 For the avoidance of doubt, the above terms apply whether Capacity is purchased directly from Snowflake or through a Snowflake-authorized reseller. For
 Order Forms (including Underlying Order Forms) placed through resellers, the date of the “Billing Event,” “Processing Date” and/or “FX Adjustment” will be
-27 The “Spot Rate” means the real-time currency conversion spot rate existing in the United States as reported by Oanda.com (or such other reputable
-foreign exchange rate platform Snowflake may use in its sole discretion).
-28 The “Processing Date” means the later of: (a) the Subscription Term Start Date or the (b) the date the Order Form is processed by Snowflake.
-Notwithstanding the foregoing, any Additional Capacity Order will have the same Processing Date as the Underlying Order Form.
-22
-
 determined based on the date that the reseller is billed or places the corresponding order, as applicable.
 Changes to this Snowflake Service Consumption Table. This Snowflake Service Consumption Table may be updated from time to time. Changes shall
 be effective on the date that Snowflake announces they are effective. This Snowflake Service Consumption Table applies to Previews, provided that
