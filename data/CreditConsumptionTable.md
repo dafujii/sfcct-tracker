@@ -1,5 +1,5 @@
 Snowflake Service Consumption Table
-Effective: September 25, 2026
+Effective: September 28, 2026
 Consumption
 Generally. The Snowflake Service is a cloud data platform provided by Snowflake (“Snowflake”, “we”, “us”, “our”) to Snowflake customers (each a
 “Customer”, “you”, “your”) as a service which consumes resources for distinct functions as set forth herein and is available in several different editions
@@ -1269,6 +1269,7 @@ AI_COMPLETE – claude-opus-5-55
 | AI_COMPLETE – claude-sonnet-4-5             | 1.80   | 9.00   |
 | AI_COMPLETE – claude-sonnet-4-6             | 1.80   | 9.00   |
 | AI_COMPLETE – claude-sonnet-5               | 1.20   | 6.00   |
+| AI_COMPLETE – claude-sonnet-5-55            | 1.20   | 6.00   |
 | AI_COMPLETE – gemini-2-5-flash5             | 0.18   | 1.50   |
 | AI_COMPLETE – gemini-2-5-flash-lite5        | 0.06   | 0.24   |
 | AI_COMPLETE – gemini-3.1-flash-lite5        | 0.15   | 0.90   |
@@ -1297,10 +1298,10 @@ AI_COMPLETE – claude-opus-5-55
 | AI_COMPLETE – mistral-7b                    | 0.09   | 0.12   |
 | AI_COMPLETE – mixtral-8x7b                  | 0.27   | 0.42   |
 | AI_COMPLETE – openai-gpt-4.1                | 1.20   | 4.80   |
-| AI_COMPLETE – openai-gpt-55                 | 0.75   | 6.00   |
-AI_COMPLETE – openai-gpt-5-mini5
-|                                                  | 0.15   | 1.20   |
+AI_COMPLETE – openai-gpt-55
+|                                                  | 0.75   | 6.00   |
 | ------------------------------------------------ | ------ | ------ |
+| AI_COMPLETE – openai-gpt-5-mini5                 | 0.15   | 1.20   |
 | AI_COMPLETE – openai-gpt-5-nano5                 | 0.033  | 0.24   |
 | AI_COMPLETE – openai-gpt-5.1                     | 0.75   | 6.00   |
 | AI_COMPLETE – openai-gpt-5.2                     | 1.05   | 8.40   |
@@ -1315,24 +1316,26 @@ AI_COMPLETE – openai-gpt-5-mini5
 | AI_COMPLETE – openai-gpt-5.6-sol5                | 3.00   | 18.00  |
 | AI_COMPLETE – openai-gpt-5.6-terra5              | 1.20   | 7.20   |
 AI_COMPLETE – openai-gpt-5.6-terra-long-context5  2.40  10.80
-| AI_COMPLETE – openai-gpt-6-astra5  | 6.00  | 30.00  |
-| ---------------------------------- | ----- | ------ |
 
 21 This feature is available under promotional pricing for a limited time. Prices will increase by 100% on January 1, 2027, or such other date as Snowflake
 determines, as reflected in the Snowflake Service Consumption Table or otherwise communicated by Snowflake.
 
   17
 
+| AI_COMPLETE – openai-gpt-6-astra5  |     | 6.00  |     | 30.00  |
+| ---------------------------------- | --- | ----- | --- | ------ |
 AI_COMPLETE – openai-gpt-6-astra-long-context5  12.00  45.00
 | AI_COMPLETE – openai-gpt-6-luna5               |     | 0.06  |     | 0.30  |
 | ---------------------------------------------- | --- | ----- | --- | ----- |
 | AI_COMPLETE – openai-gpt-6-luna-long-context5  |     | 0.12  |     | 0.45  |
 | AI_COMPLETE – openai-gpt-6-sol5                |     | 1.20  |     | 6.00  |
-| AI_COMPLETE – openai-gpt-6-sol-long-context5   |     | 2.40  |     | 9.00  |
-| AI_COMPLETE – pixtral-large                    |     | 1.20  |     | 3.60  |
-| AI_COMPLETE – qwen3-32b5                       |     | 0.09  |     | 0.36  |
-| AI_COMPLETE – qwen3-next-80b-a3b5              |     | 0.09  |     | 0.72  |
-| AI_COMPLETE – qwen3-vl-235b-a22b5              |     | 0.32  |     | 1.60  |
+AI_COMPLETE – openai-gpt-6-sol-long-context5
+|                                     |     | 2.40  |     | 9.00  |
+| ----------------------------------- | --- | ----- | --- | ----- |
+| AI_COMPLETE – pixtral-large         |     | 1.20  |     | 3.60  |
+| AI_COMPLETE – qwen3-32b5            |     | 0.09  |     | 0.36  |
+| AI_COMPLETE – qwen3-next-80b-a3b5   |     | 0.09  |     | 0.72  |
+| AI_COMPLETE – qwen3-vl-235b-a22b5   |     | 0.32  |     | 1.60  |
 AI_COMPLETE – twelvelabs-pegasus-1-2  See “Snowflake AI Features Table, Other” below
   Snowflake-managed compute (AI Credits per one million Tokens)
 | AI_AGG                                    |     |     | 1.85  |     |
@@ -1373,17 +1376,16 @@ Legacy Cortex Features
 Table 6(b): Snowflake AI Features Table, Cortex Inference with Prompt Caching
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
-|                    | Input  | Output  | Cache Write  | Cache Read  |
-| ------------------ | ------ | ------- | ------------ | ----------- |
-| claude-4-sonnet    | 1.50   | 7.50    | 1.875        | 0.15        |
-| claude-fable-55    | 5.00   | 25.00   | 6.25         | 0.50        |
-| claude-fable-5.15  | 5.00   | 25.00   | 6.25         | 0.125       |
-| claude-sonnet-4-5  | 1.50   | 7.50    | 1.875        | 0.15        |
-| claude-sonnet-4-6  | 1.50   | 7.50    | 1.875        | 0.15        |
-| claude-sonnet-5    | 1.00   | 5.00    | 1.25         | 0.10        |
-| claude-haiku-4-5   | 0.50   | 2.50    | 0.625        | 0.05        |
-| claude-opus-4-5    | 2.50   | 12.50   | 3.125        | 0.25        |
-| claude-opus-4-6    | 2.50   | 12.50   | 3.125        | 0.25        |
+|                     | Input  | Output  | Cache Write  | Cache Read  |
+| ------------------- | ------ | ------- | ------------ | ----------- |
+| claude-4-sonnet     | 1.50   | 7.50    | 1.875        | 0.15        |
+| claude-fable-55     | 5.00   | 25.00   | 6.25         | 0.50        |
+| claude-fable-5.15   | 5.00   | 25.00   | 6.25         | 0.125       |
+| claude-sonnet-4-5   | 1.50   | 7.50    | 1.875        | 0.15        |
+| claude-sonnet-4-6   | 1.50   | 7.50    | 1.875        | 0.15        |
+| claude-sonnet-5     | 1.00   | 5.00    | 1.25         | 0.10        |
+| claude-sonnet-5-55  | 1.00   | 5.00    | 1.25         | 0.10        |
+| claude-haiku-4-5    | 0.50   | 2.50    | 0.625        | 0.05        |
 
   18
 
@@ -1392,19 +1394,19 @@ Snowflake-managed compute (AI Credits per one million Tokens)
 Model
 |                   | Input  | Output  | Cache Write  | Cache Read  |
 | ----------------- | ------ | ------- | ------------ | ----------- |
+| claude-opus-4-5   | 2.50   | 12.50   | 3.125        | 0.25        |
+| claude-opus-4-6   | 2.50   | 12.50   | 3.125        | 0.25        |
 | claude-opus-4-75  | 2.50   | 12.50   | 3.125        | 0.25        |
-claude-opus-4-85
-|                          | 2.50   | 12.50  | 3.125  | 0.25  |
-| ------------------------ | ------ | ------ | ------ | ----- |
-| claude-opus-55           | 2.50   | 12.50  | 3.125  | 0.25  |
-| claude-opus-5-55         | 2.00   | 10.00  | 2.5    | 0.10  |
-| glm-5.35                 | 0.70   | 2.20   | -      | 0.13  |
-| grok-4.205               | 0.625  | 1.25   | -      | 0.1   |
-| grok-4.20-long-context5  | 1.25   | 2.5    | -      | 0.2   |
-| grok-4.35                | 0.625  | 1.25   | -      | 0.1   |
-grok-4.3-long-context5
+| claude-opus-4-85  | 2.50   | 12.50   | 3.125        | 0.25        |
+| claude-opus-55    | 2.50   | 12.50   | 3.125        | 0.25        |
+| claude-opus-5-55  | 2.00   | 10.00   | 2.5          | 0.10        |
+| glm-5.35          | 0.70   | 2.20    | -            | 0.13        |
+| grok-4.205        | 0.625  | 1.25    | -            | 0.1         |
+grok-4.20-long-context5
 |                                    | 1.25   | 2.5    | -      | 0.2    |
 | ---------------------------------- | ------ | ------ | ------ | ------ |
+| grok-4.35                          | 0.625  | 1.25   | -      | 0.1    |
+| grok-4.3-long-context5             | 1.25   | 2.5    | -      | 0.2    |
 | grok-4.65                          | 1.0    | 3.0    | -      | 0.25   |
 | kimi-k35                           | 1.50   | 7.50   | 1.875  | 0.15   |
 | openai-gpt-4.1                     | 1.00   | 4.00   | -      | 0.25   |
@@ -1421,17 +1423,19 @@ grok-4.3-long-context5
 | openai-gpt-5.5-long-context5       | 5.00   | 22.50  | -      | 0.50   |
 | openai-gpt-5.6-luna5               | 0.10   | 0.60   | 0.125  | 0.01   |
 | openai-gpt-5.6-luna-long-context5  | 0.20   | 0.90   | 0.25   | 0.02   |
-| openai-gpt-5.6-sol5                | 2.50   | 15.00  | -      | 0.25   |
-| openai-gpt-5.6-terra5              | 1.00   | 6.00   | 1.25   | 0.10   |
-openai-gpt-5.6-terra-long-context5
-|                                   | 2.00   | 9.00   | 2.50   | 0.20   |
-| --------------------------------- | ------ | ------ | ------ | ------ |
-| openai-gpt-6-astra5               | 5.00   | 25.00  | 6.25   | 0.50   |
-| openai-gpt-6-astra-long-context5  | 10.00  | 37.50  | 12.50  | 1.00   |
-| openai-gpt-6-luna5                | 0.05   | 0.25   | 0.063  | 0.005  |
-| openai-gpt-6-luna-long-context5   | 0.10   | 0.375  | 0.125  | 0.01   |
-| openai-gpt-6-sol5                 | 1.00   | 5.00   | 1.25   | 0.10   |
-| openai-gpt-6-sol-long-context5    | 2.00   | 7.50   | 2.50   | 0.20   |
+openai-gpt-5.6-sol5
+|                                     | 2.50   | 15.00  | -      | 0.25   |
+| ----------------------------------- | ------ | ------ | ------ | ------ |
+| openai-gpt-5.6-terra5               | 1.00   | 6.00   | 1.25   | 0.10   |
+| openai-gpt-5.6-terra-long-context5  | 2.00   | 9.00   | 2.50   | 0.20   |
+| openai-gpt-6-astra5                 | 5.00   | 25.00  | 6.25   | 0.50   |
+| openai-gpt-6-astra-long-context5    | 10.00  | 37.50  | 12.50  | 1.00   |
+| openai-gpt-6-luna5                  | 0.05   | 0.25   | 0.063  | 0.005  |
+| openai-gpt-6-luna-long-context5     | 0.10   | 0.375  | 0.125  | 0.01   |
+openai-gpt-6-sol5
+|                                 | 1.00  | 5.00  | 1.25  | 0.10  |
+| ------------------------------- | ----- | ----- | ----- | ----- |
+| openai-gpt-6-sol-long-context5  | 2.00  | 7.50  | 2.50  | 0.20  |
 
 Table 6(c): Snowflake AI Features Table, Cortex Inference
 Snowflake-managed compute (AI Credits per one million Tokens)
@@ -1470,6 +1474,7 @@ claude-opus-5-55
 | claude-sonnet-4-5       | 1.95   | 9.76   | 2.44   | 0.20   |
 | claude-sonnet-4-6       | 1.95   | 9.76   | 2.44   | 0.20   |
 | claude-sonnet-5         | 1.30   | 6.50   | 1.625  | 0.13   |
+| claude-sonnet-5-55      | 1.30   | 6.50   | 1.625  | 0.13   |
 | gemini-2-5-flash5       | 0.18   | 1.48   | -      | 0.02   |
 | gemini-3.1-flash-lite5  | 0.163  | 0.975  | -      | 0.017  |
 | gemini-3.1-pro5         | 1.30   | 7.81   | -      | 0.13   |
@@ -1484,23 +1489,23 @@ claude-opus-5-55
 | openai-gpt-5.1          | 0.81   | 6.51   | -      | 0.08   |
 | openai-gpt-5.2          | 1.14   | 9.11   | -      | 0.11   |
 | openai-gpt-5.4          | 1.63   | 9.76   | -      | 0.16   |
-| openai-gpt-5.55         | 3.25   | 19.50  | -      | 0.33   |
-openai-gpt-5.5-long-context5
-|                                     | 6.50  | 29.25  | -      | 0.65   |
+openai-gpt-5.55
+|                                     | 3.25  | 19.50  | -      | 0.33   |
 | ----------------------------------- | ----- | ------ | ------ | ------ |
+| openai-gpt-5.5-long-context5        | 6.50  | 29.25  | -      | 0.65   |
 | openai-gpt-5.6-luna5                | 0.13  | 0.78   | 0.163  | 0.013  |
 | openai-gpt-5.6-luna-long-context5   | 0.26  | 1.17   | 0.325  | 0.026  |
 | openai-gpt-5.6-sol5                 | 3.25  | 19.50  | -      | 0.325  |
 | openai-gpt-5.6-terra5               | 1.30  | 7.80   | 1.625  | 0.13   |
 | openai-gpt-5.6-terra-long-context5  | 2.60  | 11.70  | 3.25   | 0.26   |
-| openai-gpt-6-astra5                 | 6.50  | 32.50  | 8.125  | 0.65   |
-openai-gpt-6-astra-long-context5
-|                                  | 13.00  | 48.75  | 16.25  | 1.30   |
-| -------------------------------- | ------ | ------ | ------ | ------ |
-| openai-gpt-6-luna5               | 0.065  | 0.325  | 0.081  | 0.007  |
-| openai-gpt-6-luna-long-context5  | 0.13   | 0.488  | 0.163  | 0.013  |
-| openai-gpt-6-sol5                | 1.30   | 6.50   | 1.625  | 0.13   |
-| openai-gpt-6-sol-long-context5   | 2.60   | 9.75   | 3.25   | 0.26   |
+openai-gpt-6-astra5
+|                                   | 6.50   | 32.50  | 8.125  | 0.65   |
+| --------------------------------- | ------ | ------ | ------ | ------ |
+| openai-gpt-6-astra-long-context5  | 13.00  | 48.75  | 16.25  | 1.30   |
+| openai-gpt-6-luna5                | 0.065  | 0.325  | 0.081  | 0.007  |
+| openai-gpt-6-luna-long-context5   | 0.13   | 0.488  | 0.163  | 0.013  |
+| openai-gpt-6-sol5                 | 1.30   | 6.50   | 1.625  | 0.13   |
+| openai-gpt-6-sol-long-context5    | 2.60   | 9.75   | 3.25   | 0.26   |
 
 Table 6(e): Snowflake AI Features Table, Snowflake CoCo
 Snowflake-managed compute (AI Credits per one million Tokens)
@@ -1515,38 +1520,41 @@ Model
 | claude-opus-4-75   | 2.75   | 13.75   | 3.44         | 0.28        |
 | claude-opus-4-85   | 2.75   | 13.75   | 3.44         | 0.28        |
 | claude-opus-55     | 2.75   | 13.75   | 3.44         | 0.28        |
-| claude-opus-5-55   | 2.20   | 11.00   | 2.75         | 0.11        |
 
   20
 
 Table 6(e): Snowflake AI Features Table, Snowflake CoCo
 Snowflake-managed compute (AI Credits per one million Tokens)
 Model
-|                                     | Input  | Output  | Cache Write  | Cache Read  |
-| ----------------------------------- | ------ | ------- | ------------ | ----------- |
-| claude-sonnet-4-5                   | 1.65   | 8.25    | 2.07         | 0.17        |
-| claude-sonnet-4-6                   | 1.65   | 8.25    | 2.07         | 0.17        |
-| claude-sonnet-5                     | 1.10   | 5.50    | 1.375        | 0.114       |
-| gemini-3.1-flash-lite5              | 0.138  | 0.825   | -            | 0.014       |
-| gemini-3.7-flash5, 21               | 0.413  | 2.063   | -            | 0.041       |
-| gemini-3.8-flash5, 21               | 0.413  | 2.063   | -            | 0.041       |
-| grok-4.65                           | 1.1    | 3.3     | -            | 0.275       |
-| kimi-k35                            | 1.65   | 8.25    | 2.063        | 0.165       |
-| openai-gpt-5.2                      | 0.97   | 7.70    | -            | 0.10        |
-| openai-gpt-5.4                      | 1.38   | 8.25    | -            | 0.14        |
-| openai-gpt-5.55                     | 2.75   | 16.50   | -            | 0.28        |
-| openai-gpt-5.5-long-context5        | 5.50   | 24.75   | -            | 0.55        |
-| openai-gpt-5.6-luna5                | 0.11   | 0.66    | 0.138        | 0.011       |
-| openai-gpt-5.6-luna-long-context5   | 0.22   | 0.99    | 0.275        | 0.022       |
-| openai-gpt-5.6-sol5                 | 2.75   | 16.50   | -            | 0.275       |
-| openai-gpt-5.6-terra5               | 1.10   | 6.60    | 1.375        | 0.11        |
-| openai-gpt-5.6-terra-long-context5  | 2.20   | 9.90    | 2.75         | 0.22        |
-| openai-gpt-6-astra5                 | 5.50   | 27.50   | 6.875        | 0.55        |
-| openai-gpt-6-astra-long-context5    | 11.00  | 41.25   | 13.75        | 1.10        |
-| openai-gpt-6-luna5                  | 0.055  | 0.275   | 0.069        | 0.006       |
-| openai-gpt-6-luna-long-context5     | 0.11   | 0.413   | 0.138        | 0.011       |
-| openai-gpt-6-sol5                   | 1.10   | 5.50    | 1.375        | 0.11        |
-| openai-gpt-6-sol-long-context5      | 2.20   | 8.25    | 2.75         | 0.22        |
+|                         | Input  | Output  | Cache Write  | Cache Read  |
+| ----------------------- | ------ | ------- | ------------ | ----------- |
+| claude-opus-5-55        | 2.20   | 11.00   | 2.75         | 0.11        |
+| claude-sonnet-4-5       | 1.65   | 8.25    | 2.07         | 0.17        |
+| claude-sonnet-4-6       | 1.65   | 8.25    | 2.07         | 0.17        |
+| claude-sonnet-5         | 1.10   | 5.50    | 1.375        | 0.114       |
+| claude-sonnet-5-55      | 1.10   | 5.50    | 1.375        | 0.11        |
+| gemini-3.1-flash-lite5  | 0.138  | 0.825   | -            | 0.014       |
+| gemini-3.7-flash5, 21   | 0.413  | 2.063   | -            | 0.041       |
+| gemini-3.8-flash5, 21   | 0.413  | 2.063   | -            | 0.041       |
+grok-4.65
+|                                     | 1.1    | 3.3    | -      | 0.275  |
+| ----------------------------------- | ------ | ------ | ------ | ------ |
+| kimi-k35                            | 1.65   | 8.25   | 2.063  | 0.165  |
+| openai-gpt-5.2                      | 0.97   | 7.70   | -      | 0.10   |
+| openai-gpt-5.4                      | 1.38   | 8.25   | -      | 0.14   |
+| openai-gpt-5.55                     | 2.75   | 16.50  | -      | 0.28   |
+| openai-gpt-5.5-long-context5        | 5.50   | 24.75  | -      | 0.55   |
+| openai-gpt-5.6-luna5                | 0.11   | 0.66   | 0.138  | 0.011  |
+| openai-gpt-5.6-luna-long-context5   | 0.22   | 0.99   | 0.275  | 0.022  |
+| openai-gpt-5.6-sol5                 | 2.75   | 16.50  | -      | 0.275  |
+| openai-gpt-5.6-terra5               | 1.10   | 6.60   | 1.375  | 0.11   |
+| openai-gpt-5.6-terra-long-context5  | 2.20   | 9.90   | 2.75   | 0.22   |
+| openai-gpt-6-astra5                 | 5.50   | 27.50  | 6.875  | 0.55   |
+| openai-gpt-6-astra-long-context5    | 11.00  | 41.25  | 13.75  | 1.10   |
+| openai-gpt-6-luna5                  | 0.055  | 0.275  | 0.069  | 0.006  |
+| openai-gpt-6-luna-long-context5     | 0.11   | 0.413  | 0.138  | 0.011  |
+| openai-gpt-6-sol5                   | 1.10   | 5.50   | 1.375  | 0.11   |
+| openai-gpt-6-sol-long-context5      | 2.20   | 8.25   | 2.75   | 0.22   |
 
 Table 6(f): Snowflake AI Features Table, Fine-tuning5
 Snowflake-managed compute
@@ -1578,13 +1586,14 @@ AI_PARSE_DOCUMENT – Layout   3.66 AI Credits per 1,000 pages
 AI Sensitive Data Classification – openai-gpt-5-mini5  0.15 AI Credits per one million input tokens
 1.2 AI Credits per one million output tokens
 Batch Cortex Search5  0.12 AI Credits per GB/hr of indexed data
-| Cortex Analyst  | 67 Platform Credits per 1,000 messages22  |     |     |     |
-| --------------- | ----------------------------------------- | --- | --- | --- |
-| Cortex Search   | 6.3 AI Credits per GB/mo of indexed data  |     |     |     |
-
-22 This pricing will only be applicable when using the Cortex Analyst API.
 
   21
+
+Table 6(g): Snowflake AI Features Table, Other
+|                 | Feature  |                                           | Snowflake-managed compute  |     |
+| --------------- | -------- | ----------------------------------------- | -------------------------- | --- |
+| Cortex Analyst  |          | 67 Platform Credits per 1,000 messages22  |                            |     |
+| Cortex Search   |          | 6.3 AI Credits per GB/mo of indexed data  |                            |     |
 
 A Provisioned Throughput reservation allows you to reserve continuous access to certain Snowflake AI Features for a specified, fixed term (the “Provisioned
 Throughput”), subject to Snowflake’s approval. Each Provisioned Throughput must specify: (i) the reserved Snowflake AI Feature; (ii) the term; (iii) and the
@@ -1592,31 +1601,40 @@ number of requested provisioned throughput units (“PTUs”), as described furt
 Provisioned Throughput throughout the term regardless of your actual usage of the reserved Snowflake AI Feature. Provisioned Throughput is non-
 cancellable, non-transferable, non-resellable, non-exchangeable, non-modifiable, non-refundable and non-renewable. Provisioned Throughput does not
 renew automatically.
+
 Table 6(h): Snowflake AI Features Table, Provisioned Throughput
-Cloud Provider Snowflake-managed compute (Platform Credits per PTU per hour)23 Term Length (months)
-AWS 0.08 1
-Azure 0.10 1
+Cloud Provider  Snowflake-managed compute (Platform Credits per PTU per hour)23  Term Length (months)
+| AWS    |     | 0.08  |     | 1   |
+| ------ | --- | ----- | --- | --- |
+| Azure  |     | 0.10  |     | 1   |
+
 Table 7: Openflow Connector for Oracle
 Unit Price per Licensed Core24
-Fee Type
-36-Month Commitment25 12-Month Commitment26
-License $70 per month $2,520
-Support & Maintenance $40 per month $600 per year
+|                        | Fee Type  |     | 36-Month Commitment25  | 12-Month Commitment26  |
+| ---------------------- | --------- | --- | ---------------------- | ---------------------- |
+| License                |           |     | $70 per month          | $2,520                 |
+| Support & Maintenance  |           |     | $40 per month          | $600 per year          |
+
 Table 8: Organization Usage
-Records Powering Views (per Month) Platform Credits per month
-<1 million 0
-1 million £ Records < 10 million 2
-10 million £ Records 50 million 11
-50 million £ Records < 250 million 50
-250 million £ Records < 500 million 115
-500 million £ Records <1 billion 230
-1 billion £ Records < 2.5 billion 290
-2.5 billion £ Records < 5 billion 575
-5 billion £ Records < 10 billion 1150
-10 billion £ Records < 20 billion 2300
-20 billion £ Records 3500
+Records Powering Views (per Month)  Platform Credits per month
+| <1 million                          |     |     | 0   |     |
+| ----------------------------------- | --- | --- | --- | --- |
+| 1 million £ Records < 10 million    |     |     | 2   |     |
+| 10 million £ Records 50 million     |     |     | 11  |     |
+| 50 million £ Records < 250 million  |     |     | 50  |     |
+115
+250 million £ Records < 500 million
+| 500 million £ Records <1 billion   |     |     | 230   |     |
+| ---------------------------------- | --- | --- | ----- | --- |
+| 1 billion £ Records < 2.5 billion  |     |     | 290   |     |
+| 2.5 billion £ Records < 5 billion  |     |     | 575   |     |
+| 5 billion £ Records < 10 billion   |     |     | 1150  |     |
+| 10 billion £ Records < 20 billion  |     |     | 2300  |     |
+| 20 billion £ Records               |     |     | 3500  |     |
+
 Additional Accounts. You may request additional Accounts through the Snowflake Service or by filing a support ticket. Notwithstanding the foregoing, you
 may be required to sign an Order Form to add new VPS accounts.
+
 Non-U.S. Order Forms. Customer is responsible for all Taxes associated with its purchases or use of, or access to, the Snowflake offerings. If Snowflake
 has the legal obligation to pay or collect such Taxes, Snowflake will invoice Customer and Customer will pay that amount unless Customer provides
 Snowflake with a valid tax exemption certificate authorized by the appropriate taxing authority. Taxes will not be deducted from payments to Snowflake,
@@ -1627,14 +1645,13 @@ respective tax authority. Where applicable, Customer will provide its VAT/GST Re
 the purchased services. As used here, "Taxes" means taxes, levies, duties or similar governmental assessments of any nature, including, for example, any
 sales, use, GST, value-added, withholding, or similar taxes, whether domestic or foreign, or assessed by any jurisdiction, but excluding any taxes based on
 net income, property, or employees of Snowflake.
+
 Currency Conversions. Customer’s consumption pursuant to this Snowflake Service Consumption Table will be measured in U.S. Dollars (“USD”). If an
 Order Form requires payment in a currency other than USD (“Foreign Currency”) and specifies the Capacity Platform Credit Price, AI Credit Price, and the
 Capacity Storage Price in USD, Customer’s invoice(s) will be payable to Snowflake in such Foreign Currency pursuant to the payment obligations set forth
-in the Order Form and further subject to the following:
-1. If Customer is in On Demand:
-a. For each invoice, Customer’s consumption for the invoiced period will be converted from USD to the relevant Foreign
-Currency at the Spot Rate27 applicable for the last day of the invoiced period.
-23 Each Provisioned Throughput reservation is subject to minimum PTU quantities and incremental quantities, as described in the Documentation.
+
+22 This pricing will only be applicable when using the Cortex Analyst API.
+23  Each Provisioned Throughput reservation is subject to minimum PTU quantities and incremental quantities, as described in the Documentation.
 24 A “Licensed Core” is a single processing core in a CPU, multiplied by the Licensing Factor, where such processing core is: (i) running an Oracle
 database; and (ii) connected to Openflow Connector for Oracle. The “Licensing Factor” means the then-applicable “Core Processor Licensing Factor,” as
 described in the “Oracle Processor Core Factor Table” made available at https://www.oracle.com/contracts/docs/processor-core-factor-table-070634.pdf
@@ -1643,10 +1660,13 @@ described in the “Oracle Processor Core Factor Table” made available at http
 after month 36, the license fee is paid in full and S&M fees auto-renew in 12-month increments, billed monthly.
 26 Subject to the terms of the Openflow Connector for Oracle Addendum, (i) license fee is billed upfront, and (ii) S&M fee is billed upfront at the start of the
 12-month commitment, which auto-renews in 12-month increments.
-27 The “Spot Rate” means the real-time currency conversion spot rate existing in the United States as reported by Oanda.com (or such other reputable
-foreign exchange rate platform Snowflake may use in its sole discretion).
-22
 
+  22
+
+in the Order Form and further subject to the following:
+1. If Customer is in On Demand:
+a. For each invoice, Customer’s consumption for the invoiced period will be converted from USD to the relevant Foreign
+Currency at the Spot Rate27 applicable for the last day of the invoiced period.
 b. Customer will receive a monthly statement reflecting its consumption for the immediately preceding month in USD.
 2. If Customer has available Capacity:
 a. Customer’s total Capacity commitment specified in the Order Form will be converted from Foreign Currency to USD at the
@@ -1679,6 +1699,8 @@ Changes to this Snowflake Service Consumption Table. This Snowflake Service Cons
 be effective on the date that Snowflake announces they are effective. This Snowflake Service Consumption Table applies to Previews, provided that
 Previews may be subject to different pricing, as may be set forth in the applicable Documentation.
 Any capitalized terms used but not defined herein shall have the meaning set forth in the Agreement or the Documentation, as applicable.
+27 The “Spot Rate” means the real-time currency conversion spot rate existing in the United States as reported by Oanda.com (or such other reputable
+foreign exchange rate platform Snowflake may use in its sole discretion).
 28 The “Processing Date” means the later of: (a) the Subscription Term Start Date or the (b) the date the Order Form is processed by Snowflake.
 Notwithstanding the foregoing, any Additional Capacity Order will have the same Processing Date as the Underlying Order Form.
 23
