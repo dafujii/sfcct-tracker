@@ -1,5 +1,5 @@
 Snowflake Service Consumption Table
-Effective: October 9, 2026
+Effective: October 12, 2026
 Consumption
 Generally. The Snowflake Service is a cloud data platform provided by Snowflake (“Snowflake”, “we”, “us”, “our”) to Snowflake customers (each a
 “Customer”, “you”, “your”) as a service which consumes resources for distinct functions as set forth herein and is available in several different editions
@@ -1297,7 +1297,7 @@ AI_COMPLETE – claude-opus-4-75
 | AI_COMPLETE – gemma-4-26b-a4b               | 0.078  | 0.24   |
 | AI_COMPLETE – gemma-4-31b                   | 0.084  | 0.24   |
 | AI_COMPLETE – gemma-4-e2b                   | 0.024  | 0.048  |
-| AI_COMPLETE – glm-5.35                      | 0.84   | 2.64   |
+| AI_COMPLETE – glm-5.35                      | 1.008  | 3.168  |
 | AI_COMPLETE – grok-4.205                    | 0.75   | 1.50   |
 | AI_COMPLETE – grok-4.20-long-context5       | 1.50   | 3.00   |
 | AI_COMPLETE – grok-4.35                     | 0.75   | 1.50   |
@@ -1424,7 +1424,7 @@ claude-sonnet-5-55
 | claude-opus-55           | 2.50   | 12.50  | 3.125  | 0.25   |
 | claude-opus-5-55         | 2.00   | 10.00  | 2.5    | 0.10   |
 | deepseek-v4-flash5       | 0.22   | 0.66   | -      | 0.007  |
-| glm-5.35                 | 0.70   | 2.20   | -      | 0.13   |
+| glm-5.35                 | 0.84   | 2.64   | -      | 0.156  |
 | grok-4.205               | 0.625  | 1.25   | -      | 0.1    |
 | grok-4.20-long-context5  | 1.25   | 2.5    | -      | 0.2    |
 | grok-4.35                | 0.625  | 1.25   | -      | 0.1    |
@@ -1510,7 +1510,7 @@ gemini-2-5-flash5
 | gemini-3.5-flash5       | 0.98   | 5.85   | -   | 0.10   |
 | gemini-3.7-flash5, 22   | 0.488  | 2.438  | -   | 0.049  |
 | gemini-3.8-flash5, 22   | 0.488  | 2.438  | -   | 0.049  |
-| glm-5.35                | 0.91   | 2.86   | -   | 0.169  |
+| glm-5.35                | 1.092  | 3.432  | -   | 0.203  |
 grok-4.65
 |                                    | 1.30  | 3.90   | -      | 0.325  |
 | ---------------------------------- | ----- | ------ | ------ | ------ |
@@ -1576,7 +1576,7 @@ gemini-3.1-flash-lite5
 | ---------------------------------- | ------ | ------ | ------ | ------ |
 | gemini-3.7-flash5, 22              | 0.413  | 2.063  | -      | 0.041  |
 | gemini-3.8-flash5, 22              | 0.413  | 2.063  | -      | 0.041  |
-| glm-5.35                           | 0.77   | 2.42   | -      | 0.143  |
+| glm-5.35                           | 0.924  | 2.904  | -      | 0.172  |
 | grok-4.65                          | 1.10   | 3.30   | -      | 0.275  |
 | grok-4.75                          | 1.10   | 3.30   | -      | 0.275  |
 | kimi-k35                           | 1.65   | 8.25   | 2.063  | 0.165  |
